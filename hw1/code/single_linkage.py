@@ -30,11 +30,10 @@ class SingleLinkage:
                 nearest2_equal = False
                 break
             
-        return nearest1_equal and nearest2_equal
+        return nearest1_equal or nearest2_equal
         
     def fit(self):
-        # D = pairwise_distances(self.X, metric=self.metric)
-        
+        # until clusters are all merged
         while len(self.clusters) > 1:
             
             # find nearest clusters
@@ -42,15 +41,17 @@ class SingleLinkage:
             for i in range(len(self.clusters)):
                 for j in range(i+1, len(self.clusters)):
                     
+                    # if dist between clusters c1, c2 is less than nearest_cluster_dist
                     c1, c2 = self.clusters[i], self.clusters[j]
-                    nearest_cluster_dist = min(nearest_cluster_dist, self.cluster_distance(c1, c2))
-                    nearest_clusters = [c1, c2]
- 
-            # update clusters
+                    if self.cluster_distance(c1, c2) < nearest_cluster_dist:
+                        nearest_cluster_dist = self.cluster_distance(c1, c2)
+                        nearest_clusters = [c1, c2]
+        
+            # merge nearest clusters 
             self.clusters = [c for c in self.clusters if not self.clusters_equal(c, nearest_clusters)]
             self.clusters.append(nearest_clusters[0] + nearest_clusters[1])
             self.dendrogram.append(self.clusters)
-            print(len(self.clusters))
+
         
         
         
