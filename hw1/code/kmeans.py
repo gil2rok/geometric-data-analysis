@@ -49,7 +49,7 @@ class KMeans:
             total_dist, num_pts = 0, 0
             
             # iterate over all data points in k-th mean
-            for j, (assignment, dist) in enumerate(self.assignments):
+            for j, (assignment, _) in enumerate(self.assignments):
                 if assignment == i:
                     total_dist += self.X[j]
                     num_pts += 1
