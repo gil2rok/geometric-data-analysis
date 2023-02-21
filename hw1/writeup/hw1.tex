@@ -132,9 +132,27 @@
     \end{figure}
     \pagebreak
 
-\section[short]{Spectral Clustering: RBF Kernel vs K-Nearest Neighbors}
+\section[short]{Spectral Clustering: RBF Kernel vs \\ K-Nearest Neighbors}
 
-    Nearly done. The Gaussian method of constructing the weight matrix seems more robust.
-             
+    I ran spectral clustering, constructing graph weights both with Gaussian / radial basis function (RBF) kernel and selecting K nearest neighbors ($k$-NN). When creating a graph with RBF, I ensured the weight matrix was symmetric: if $x$ is a nearest neighbor of $y$, I made $y$ a nearest neighbor of $x$. Furthermore, I selected the RBF kernel parameter as $\sigma = 1$ and the $K$ nearest neighbor as $num neighbors = 7$. 
+
+    I first compared RBF and $k$-NN on the concentric annuli. I set the radi of the first annuli to $r_{\textrm{min}}^1 = 1, r_{\textrm{max}}^1 = 2$ and set the radi of the second annuli to $r_{\textrm{min}}^2 = 5, r_{\textrm{max}}^2 = 6$. I generated $500$ points for each annuli. When there is no noise, both spectral clustering methods perform well, succesfully clustering the data into clusters. However, when I add Gaussian noise with variance of $0.5$, the RBF kernel fails while $k$-NN does not. This occurs because the noise jiggles data points in the two different annuli closer together, thus giving them more weight according to the RBF kernel function. However, the $k$-NN method does not suffer from this problem because it only considers the $k$ nearest neighbors.
+
+    I then compared RBF and $k$-NN on a mixture of $1000$ datapoints sampled from $3$ Gaussians. These Gaussians have a variance of $1$ and means as follows:
+    
+    \begin{align*}
+        \mu_1 = \begin{bmatrix} 0 \\ 0 \end{bmatrix} \qquad \mu_2 = \begin{bmatrix} 5 \\ 5 \end{bmatrix} \qquad \mu_3 = \begin{bmatrix} 8 \\ -4 \end{bmatrix}
+    \end{align*}
+
+    Again, both spectral clustering methods perform well when there is no noise. However, when I add Gaussian noise with variance of $2$, the RBF kernel fails while $k$-NN does not. This occurs because the noise jiggles data points in the two different Gaussians closer together, thus giving them more weight according to the RBF kernel function. However, the $k$-NN method does not suffer from this problem because it only considers the $k$ nearest neighbors.
+
+    Ultimately, I conclude that the $k$-NN method is more robust to noise when clusters are close together.
+
+    \begin{figure}[ht]
+        \label{fig:rbf_vs_knn}
+        \includegraphics[width=0.99\linewidth]{images/q7/spectral_clustering:_rbf_vs_knn.png}
+        \caption{Spectral clustering with RBF kernel vs $k$-NN}
+    \end{figure}
+    \pagebreak
 
 \end{document}

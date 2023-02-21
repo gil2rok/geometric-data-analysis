@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1676964256 "/Users/gil2rok/school/geometric-data-analysis/hw1/writeup/hw1.tex" "hw1.pdf" "hw1" 1676964258
-  "/Users/gil2rok/school/geometric-data-analysis/hw1/writeup/hw1.tex" 1676955441 10492 3f1b723d218f89a74467aad0bb78621c ""
+["pdflatex"] 1676965821 "/Users/gil2rok/school/geometric-data-analysis/hw1/writeup/hw1.tex" "hw1.pdf" "hw1" 1676965823
+  "/Users/gil2rok/school/geometric-data-analysis/hw1/writeup/hw1.tex" 1676965821 12772 71b4e6be28038528056bdbf72a43b8d3 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -99,15 +99,16 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1663207547 4595816 106c4e272f709332e200b7ab82c17944 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663207570 3059211 5ab6d6acc80cf4984c72eced45b8d200 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "hw1.aux" 1676964258 3096 d2e36b00873e749e784e38d2e4aec9e7 "pdflatex"
-  "hw1.out" 1676964258 773 461669af02055a325bbe1055b76fde7a "pdflatex"
-  "hw1.tex" 1676955441 10492 3f1b723d218f89a74467aad0bb78621c ""
+  "hw1.aux" 1676965823 3308 4c23afefb18841c0fead5d89edf5a4d1 "pdflatex"
+  "hw1.out" 1676965823 773 461669af02055a325bbe1055b76fde7a "pdflatex"
+  "hw1.tex" 1676965821 12772 71b4e6be28038528056bdbf72a43b8d3 ""
   "images/q1/kmeans_singlelinkage.png" 1676843278 134006 2c0757dc8ba89aec688f2ceaf6f5e402 ""
   "images/q2/gaussian_noise.png" 1676916799 123457 a9c1ff30dfbd430e96cf6bd205981e52 ""
   "images/q4/clustering-dataset1.png" 1676938927 841047 59232ccb3739677c9e80f5dcedd442a9 ""
   "images/q4/clustering-dataset2.png" 1676945185 972914 541e027095b9e3e42fbf1ed0627d4e14 ""
   "images/q5/k-means_concistency.png" 1676948105 15113 6bd515eb38a5501795ebe84d7813bbca ""
   "images/q6/k-means_vs_spectral_clustering.png" 1676964255 206830 b805403a98b37383689ac5263d594e41 ""
+  "images/q7/spectral_clustering:_rbf_vs_knn.png" 1676964844 784840 49c7eb6cd1f9058e38944e6a21fc7c94 ""
   (generated)
   "hw1.aux"
   "hw1.log"

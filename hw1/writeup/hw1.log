@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  21 FEB 2023 02:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  21 FEB 2023 02:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -377,27 +377,28 @@ File: images/q6/k-means_vs_spectral_clustering.png Graphic file (type png)
 Package pdftex.def Info: images/q6/k-means_vs_spectral_clustering.png  used on input line 130.
 (pdftex.def)             Requested size: 310.4979pt x 103.4986pt.
  [9 <./images/q6/k-means_vs_spectral_clustering.png>]
-Overfull \hbox (5.35127pt too wide) in paragraph at lines 135--135
-[]\OT1/cmr/bx/n/14.4 Spectral Clus-ter-ing: RBF Ker-nel vs K-Nearest
- []
-
-[10] (./hw1.aux)
+<images/q7/spectral_clustering:_rbf_vs_knn.png, id=122, 1084.05pt x 1084.05pt>
+File: images/q7/spectral_clustering:_rbf_vs_knn.png Graphic file (type png)
+<use images/q7/spectral_clustering:_rbf_vs_knn.png>
+Package pdftex.def Info: images/q7/spectral_clustering:_rbf_vs_knn.png  used on input line 153.
+(pdftex.def)             Requested size: 341.5519pt x 341.54372pt.
+ [10] [11 <./images/q7/spectral_clustering:_rbf_vs_knn.png>] (./hw1.aux)
 Package rerunfilecheck Info: File `hw1.out' has not changed.
 (rerunfilecheck)             Checksum: 461669AF02055A325BBE1055B76FDE7A;773.
  ) 
 Here is how much of TeX's memory you used:
- 10282 strings out of 475075
- 162871 string characters out of 5779003
- 510534 words of memory out of 5000000
- 31507 multiletter control sequences out of 15000+600000
+ 10296 strings out of 475075
+ 163279 string characters out of 5779003
+ 510563 words of memory out of 5000000
+ 31517 multiletter control sequences out of 15000+600000
  478988 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,14n,77p,1078b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on hw1.pdf (10 pages, 1983372 bytes).
+Output written on hw1.pdf (11 pages, 2634322 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 

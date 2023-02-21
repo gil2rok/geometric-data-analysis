@@ -662,6 +662,11 @@ INPUT ./images/q6/k-means_vs_spectral_clustering.png
 INPUT images/q6/k-means_vs_spectral_clustering.png
 INPUT ./images/q6/k-means_vs_spectral_clustering.png
 INPUT ./images/q6/k-means_vs_spectral_clustering.png
+INPUT ./images/q7/spectral_clustering:_rbf_vs_knn.png
+INPUT ./images/q7/spectral_clustering:_rbf_vs_knn.png
+INPUT images/q7/spectral_clustering:_rbf_vs_knn.png
+INPUT ./images/q7/spectral_clustering:_rbf_vs_knn.png
+INPUT ./images/q7/spectral_clustering:_rbf_vs_knn.png
 INPUT hw1.aux
 INPUT ./hw1.out
 INPUT ./hw1.out
