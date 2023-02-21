@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  20 FEB 2023 14:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  21 FEB 2023 02:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,7 +331,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/q1/kmeans_singlelinkage.png, id=29, 1084.05pt x 1084.05pt>
+<images/q1/kmeans_singlelinkage.png, id=49, 1084.05pt x 1084.05pt>
 File: images/q1/kmeans_singlelinkage.png Graphic file (type png)
 <use images/q1/kmeans_singlelinkage.png>
 Package pdftex.def Info: images/q1/kmeans_singlelinkage.png  used on input line 51.
@@ -339,28 +339,65 @@ Package pdftex.def Info: images/q1/kmeans_singlelinkage.png  used on input line 
  [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/q2/gaussian_noise.png, id=45, 1084.05pt x 1084.05pt>
+<images/q2/gaussian_noise.png, id=65, 1084.05pt x 1084.05pt>
 File: images/q2/gaussian_noise.png Graphic file (type png)
 <use images/q2/gaussian_noise.png>
 Package pdftex.def Info: images/q2/gaussian_noise.png  used on input line 64.
 (pdftex.def)             Requested size: 341.5519pt x 341.54372pt.
- [2 <./images/q1/kmeans_singlelinkage.png>] [3 <./images/q2/gaussian_noise.png>] [4] (./hw1.aux)
+ [2 <./images/q1/kmeans_singlelinkage.png>] [3 <./images/q2/gaussian_noise.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 87.
+
+<images/q4/clustering-dataset1.png, id=80, 1084.05pt x 1806.75pt>
+File: images/q4/clustering-dataset1.png Graphic file (type png)
+<use images/q4/clustering-dataset1.png>
+Package pdftex.def Info: images/q4/clustering-dataset1.png  used on input line 89.
+(pdftex.def)             Requested size: 310.4979pt x 517.493pt.
+[4] [5 <./images/q4/clustering-dataset1.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 100.
+
+<images/q4/clustering-dataset2.png, id=93, 1084.05pt x 1806.75pt>
+File: images/q4/clustering-dataset2.png Graphic file (type png)
+<use images/q4/clustering-dataset2.png>
+Package pdftex.def Info: images/q4/clustering-dataset2.png  used on input line 102.
+(pdftex.def)             Requested size: 310.4979pt x 517.493pt.
+[6] [7 <./images/q4/clustering-dataset2.png>]
+<images/q5/k-means_concistency.png, id=106, 535.7616pt x 227.4096pt>
+File: images/q5/k-means_concistency.png Graphic file (type png)
+<use images/q5/k-means_concistency.png>
+Package pdftex.def Info: images/q5/k-means_concistency.png  used on input line 119.
+(pdftex.def)             Requested size: 310.4979pt x 131.79355pt.
+ [8 <./images/q5/k-means_concistency.png>]
+<images/q6/k-means_vs_spectral_clustering.png, id=115, 1084.05pt x 361.35pt>
+File: images/q6/k-means_vs_spectral_clustering.png Graphic file (type png)
+<use images/q6/k-means_vs_spectral_clustering.png>
+Package pdftex.def Info: images/q6/k-means_vs_spectral_clustering.png  used on input line 130.
+(pdftex.def)             Requested size: 310.4979pt x 103.4986pt.
+ [9 <./images/q6/k-means_vs_spectral_clustering.png>]
+Overfull \hbox (5.35127pt too wide) in paragraph at lines 135--135
+[]\OT1/cmr/bx/n/14.4 Spectral Clus-ter-ing: RBF Ker-nel vs K-Nearest
+ []
+
+[10] (./hw1.aux)
 Package rerunfilecheck Info: File `hw1.out' has not changed.
-(rerunfilecheck)             Checksum: 41477F6C2358C909733A6A7A1254F9F6;403.
+(rerunfilecheck)             Checksum: 461669AF02055A325BBE1055B76FDE7A;773.
  ) 
 Here is how much of TeX's memory you used:
- 10227 strings out of 475075
- 161500 string characters out of 5779003
- 510403 words of memory out of 5000000
- 31474 multiletter control sequences out of 15000+600000
+ 10282 strings out of 475075
+ 162871 string characters out of 5779003
+ 510534 words of memory out of 5000000
+ 31507 multiletter control sequences out of 15000+600000
  478988 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,14n,77p,715b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on hw1.pdf (4 pages, 318186 bytes).
+ 72i,14n,77p,1078b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on hw1.pdf (10 pages, 1983372 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
