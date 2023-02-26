@@ -1,0 +1,148 @@
+\documentclass{article}
+
+\usepackage{amsmath,amsfonts,amssymb,mathtools} % formatting math
+\usepackage{amsthm} % for proofs
+\usepackage{verbatim} % for block comments
+\usepackage{hyperref} % for links
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+%+++++++++++++++++++++++++++++++
+
+% FANCY LETTERS
+\newcommand{\R}{\mathbb{R}} % the real number R
+\newcommand{\E}{\mathbb{E}} % expectation symbol E
+
+% BRACKETS, PARENTHESIS, AND CURLY BRACKETS
+\newcommand{\lb}{\left[} % left bracket
+\newcommand{\rb}{\right]} % right bracket
+\newcommand{\lp}{\left(} % left parenthesis
+\newcommand{\rp}{\right)} % right parenthesis
+\newcommand{\lc}{\left\{} % left curly bracket
+\newcommand{\rc}{\right\}} % right curly bracket
+
+\title{Geometric Data Analysis HW 2}
+\author{Gilad Turok, gt2453 \\ \href{mailto:gt2453@columbia.edu}{gt2453@columbia.edu}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section[]{LLE}
+
+\section{Non-Manifold Spaces}
+
+    An example of a non-manifold space is two unit circles, one centered at $(-1,0)$ and the other at $(1,0)$, that touch at a single point $(0,0)$:
+
+    \begin{align*}
+        (x-1)^2 + y^2 &= 1 \\
+        (x+1)^2 + y^2 &= 1
+    \end{align*}
+
+    This space is not a manifold because at the overlapping point $(0,0)$, a propert chart cannot be constructed. It's neighborhood looks like a rotated '+' sign which is not homeomorphic to a line segment in $\mathbb{R}^1$.
+
+\section{Chart Mapping to Zero}
+
+    Show that given any point $m \in \mathcal{M}$, where $\mathcal{M}$ is a topoligical manifold, we can choose a chart $\theta : U \rightarrow \mathbb{R}^n$ such that $\theta(m) = 0$.
+
+    \begin{proof}
+        Consider all neighborhoods that contain $m$ in its domain i.e. $m \in U_1, U_2, \ldots$. By definition of a manifold, for each neighborhood $U_i$, there exists some corresponding chart $\theta_i : U_i \rightarrow \mathbb{R}^n$ where $m$ is mapped to some arbitrary location $p \in \mathbb{R}^n$.
+
+        To instead make $\theta_i(m) = 0$, we can simply translate the chart by $-p$. Thus we can construct entirely new charts:
+        
+        \begin{equation*}
+            \theta^\prime_i(x) = \theta_i(x) - p = \theta_i(x) - \theta_i(m)
+        \end{equation*}
+
+        which ensures $\theta_i(m) = 0 $ always.
+
+    \end{proof}
+
+\section{Coordinate Charts and Transition Functions for Circles}
+
+    We will explicitly construct coordinate charts and transition functions for a circle defined by the angle and $x,y$ projections respectively. To do so, consider $S$, the unit circle $x^2 + y^2 = 1$.
+
+    \subsection{Angle Construction}
+
+        Let $\alpha$ be some angle less than $\pi$ and let $\phi$ be the angle between a point $(x,y) \in S$ and the $x$ axis. Now divide the circle into two coordinate patches:
+
+        \begin{align*}
+            U_1 &= \{(x,y) \in S | - \alpha \leq \phi \leq \pi + \alpha \} \\
+            U_2 &= \{(x,y) \in S | \pi \leq \phi \leq 2\pi \}
+        \end{align*}
+
+        Now define two corresponding charts $\theta: U \rightarrow \mathbb{R}$. I do so based on the arctan2 function, which uniqley computes the angle between a point $(x,y)$ and the $x$ axis. 
+
+        \begin{align*}
+            \theta_1(x,y) &= 
+            \begin{cases}
+                \textrm{arctan}(\frac{y}{x}) & \textrm{if } x > 0 \\
+                \textrm{arctan}(\frac{y}{x}) + \pi & \textrm{if } x < 0, y /geq 0 \\
+                \textrm{arctan}(\frac{y}{x}) - \pi & \textrm{if } x < 0, y < 0 \\
+                \frac{\pi}{2} & \textrm{if } x = 0, y > 0 \\
+                -\frac{\pi}{2} & \textrm{if } x = 0, y < 0 \\
+                \textrm{undefined} & \textrm{if } x = 0, y = 0
+            \end{cases}
+        \end{align*}
+
+        \begin{align*}
+            \theta_2(x,y) &= 
+            \begin{cases}
+                \textrm{arctan}(\frac{y}{x}) & \textrm{if } x > 0 \\
+                \textrm{arctan}(\frac{y}{x}) + \pi & \textrm{if } x < 0, y /geq 0 \\
+                \textrm{arctan}(\frac{y}{x}) - \pi & \textrm{if } x < 0, y < 0 \\
+                \frac{\pi}{2} & \textrm{if } x = 0, y > 0 \\
+                -\frac{\pi}{2} & \textrm{if } x = 0, y < 0 \\
+                \textrm{undefined} & \textrm{if } x = 0, y = 0
+            \end{cases}
+        \end{align*}
+
+        These charts sufficiently cover the circle, thus forming at atlas. We now construct two transition functions from $\mathbb{R} \rightarrow S \rightarrow \mathbb{R}$ for some point $p \in \mathbb{R}$. These overlaps occur below the $x$-axis on the left and right hand sides of the circle, between $[\pi, \pi + \alpha]$ and $[-\alpha, 2 \pi]$ respectively.
+
+        \begin{align*}
+            T_1 &: [\pi, \pi + \alpha] \rightarrow (x,y) \rightarrow [\pi, \pi + \alpha] \\
+            T_1(p) &= \theta_1 \lp \theta_2^{-1}(p) \rp = \theta_2 \lp \theta_1^{-1}(p) \rp = p
+        \end{align*}
+
+        \begin{align*}
+            T_1 &: [-\alpha, 2 \pi] \rightarrow (x,y) \rightarrow [- \alpha, 2 \pi] \\
+            T_1(p) &= \theta_1 \lp \theta_2^{-1}(p) \rp = \theta_2 \lp \theta_1^{-1}(p) \rp = p
+        \end{align*}
+
+    \subsection{Projection Construction}
+
+        Divide the circle into four coordinate patches, each of which is a half-plane:
+
+        \begin{align*}
+            U_{top} &= \{(x,y) \in S | y \geq 0 \} \\
+            U_{bottom} &= \{(x,y) \in S | y \leq 0 \} \\
+            U_{right} &= \{(x,y) \in S | x \geq 0 \} \\
+            U_{left} &= \{(x,y) \in S | x \leq 0 \} \\
+        \end{align*}
+
+        Now define four corresponding charts $\theta: U \rightarrow \mathbb{R}$ and their inverses $X^{-1}: \mathbb{R}\rightarrow U$:
+
+        \begin{align*}
+            X_{top}(x,y) = x & \quad & X_{top}^{-1}(x) = (x, \sqrt{1 - x^2}) \\
+            X_{bottom}(x,y) = x & \quad & X_{bottom}^{-1}(x) = (x, \sqrt{1 - x^2}) \\
+            X_{left}(x,y) = y & \quad & X_{left}^{-1}(y) = (\sqrt{1 - y^2}, y) \\
+            X_{right}(x,y) = y & \quad & X_{right}^{-1}(y) = (\sqrt{1 - y^2}, y)
+        \end{align*}
+
+        This sufficently covers the entire circle, forming an atlas. Where the charts overlap, we construct four transition functions $T: R \rightarrow R$ for some point $p \in \mathbb{R}$:
+
+        \begin{align*}
+            T_1(p) &= X_{right} (X_{top}^{-1}(p)) = X_{right} (p, \sqrt{1 - p^2}) =  \sqrt{1 - p^2} \\
+            T_2(p) &= X_{right} (X_{bottom}^{-1}(p)) = X_{right} (p, \sqrt{1 - p^2}) =  \sqrt{1 - p^2} \\
+            T_3(p) &= X_{left} (X_{bottom}^{-1}(p)) = X_{left}(p, \sqrt{1 - p^2}) = \sqrt{1 - p^2} \\
+            T_4(p) &= X_{left} (X_{top}^{-1}(p)) = X_{left}(p, \sqrt{1 - p^2}) = \sqrt{1 - p^2}
+        \end{align*}
+
+        Note that the order of function composition does not matter here.
+
+\end{document}
