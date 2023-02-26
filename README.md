@@ -1,4 +1,4 @@
-b# Geometric Data Analysis
+# Geometric Data Analysis
 
 The work of Gilad Turok for [COMS 4995] Geometric Data Analysis with Professor Andrew Blumberg in Spring of 2023.
 
