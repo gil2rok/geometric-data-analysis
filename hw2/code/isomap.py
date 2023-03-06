@@ -1,27 +1,28 @@
-import numpy as np
-from sklearn.neighbors import KNeighborsTransformer 
+from sklearn.neighbors import NearestNeighbors, kneighbors_graph
 from scipy.sparse.csgraph import shortest_path
-from scipy.linalg import eig
+
+from mds import MultiDimensionalScaling
 
 class IsoMap:
-    def __init__(self, X):
-        self.n = X.shape[0] # num data points
-        self.X = X
+    def __init__(self, n_neighbors, d):
+        self.n_neighbors = n_neighbors
+        self.d = d # embedding dimension
         
-    def mds(self):
-        n = self.n # write explicitly for readability
-        H = np.eye(n) - (np.ones((n. n)) / n) # centering matrix
-        B = -0.5 * (H @ self.D @ H) # gram matrix
-        eig_values, eig_vec = eig(B) # spectral decomposition
-        print(eig_values)
-        eig_values = np.maximum(eig_values, 0) # remove negative eigenvalues
-        E = eig_vec @ np.diag(np.sqrt(eig_values)) # compute embedding
-        return E[:, :self.d]
-    
-    def fit(self, k, d):
-        self.d = d # embedding dimension d
+    def fit(self, X):
+        # k-nearest neighbors graph with euclidean weights for neighbors xi, xj
+        nbrs = NearestNeighbors(n_neighbors=self.n_neighbors).fit(X)
+        nbg = kneighbors_graph(nbrs, self.n_neighbors, mode='distance') # [n x num_neighbors]
+        print(nbg.shape)
         
-        self.W = KNeighborsTransformer(n_neighbors=k, mode='distance').fit_transform(self.X)
-        self.D = np.power(shortest_path(self.W, directed=False), 2) + 1e-7
-        self.Y = self.mds() # lower dimensional embedding
-        return self.Y
+        # symmetrical shortest-path dist matrix
+        dist_matrix = shortest_path(nbg, directed=False) # [n x n]
+        
+        # multi-dimensional scaling
+        mds = MultiDimensionalScaling(self.d, 'precomputed')
+        self.embedding = mds.fit_transform(dist_matrix) # [n x d]
+        
+    def fit_transform(self, X):
+        self.fit(X)
+        return self.embedding
+        
+        
