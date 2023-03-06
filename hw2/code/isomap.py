@@ -12,7 +12,6 @@ class IsoMap:
         # k-nearest neighbors graph with euclidean weights for neighbors xi, xj
         nbrs = NearestNeighbors(n_neighbors=self.n_neighbors).fit(X)
         nbg = kneighbors_graph(nbrs, self.n_neighbors, mode='distance') # [n x num_neighbors]
-        print(nbg.shape)
         
         # symmetrical shortest-path dist matrix
         dist_matrix = shortest_path(nbg, directed=False) # [n x n]
