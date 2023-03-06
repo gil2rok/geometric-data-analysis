@@ -1,7 +1,7 @@
 from sklearn.neighbors import NearestNeighbors, kneighbors_graph
 from scipy.sparse.csgraph import shortest_path
 
-from mds import MultiDimensionalScaling
+from multi_dimensional_scaling import MultiDimensionalScaling
 
 class IsoMap:
     def __init__(self, n_neighbors, d):
