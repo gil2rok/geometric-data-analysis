@@ -35,6 +35,89 @@
 
 \section[]{LLE}
 
+    \subsection{Solving for Reconstruction Weights}
+        Consider that the optimal weights $w$ for reconstructing $x_i$ from an affine combination of its neighbors $x_j$. This is given by the solution to $w_i$ that solves $G_i w_i = \boldsymbol{1}$ for Gram matrix $G$ and normalized weight vector $w_i$.
+
+        \begin{proof}
+            Consider the (squared) cost function that quantifies how accurately we reconstruct data point $x_i$ from an affine combination ($ \sum_j w_{ij} = 1$) of its $k$ nearest neighbors:
+
+            \begin{align*}
+                \mathcal{E}_i &= ||x_i - \sum_{j=1}^k w_{ij} x_j||^2 \\
+                & || (w_{i1} \ldots w_{ik}) x_i - \sum_j w_{ij} x_j||^2 \\
+                &= || \sum_j w_{ij} (x_i - x_j) ||^2 \\
+            \end{align*}
+
+            Note that if data points $x_1 \ldots x_n$ are scaled, rotated, or translated, the weights $w_i$ are the same. Now let $z$ be the difference between $x_i$ and its neighbors $x_j$:
+
+            \begin{align*}
+                z = \begin{bmatrix} x_i - x_1 \\ \vdots \\ x_i - x_k \end{bmatrix}
+            \end{align*}
+
+            Rewrite our cost function:
+
+            \begin{align*}
+                \mathcal{E}_i = || \sum_j w_{ij} z ||^2 &= (w_i^T z)(w_i^T z)^T = w_i^T (z z^T) w_i
+            \end{align*}
+
+            Now define the gram matrix such that $ G_{jk} = (x_i - x_j) \cdot (x_i - x_k)$:
+
+            \begin{align*}
+                G_i = \begin{bmatrix}
+                    (x_i - x_1) \cdot (x_i - x_1) & \ldots & (x_i - x_1) \cdot (x_i - x_k) \\
+                    \vdots & \ddots & \vdots \\
+                    (x_i - x_k) \cdot (x_i - x_1) & \ldots & (x_i - x_k) \cdot (x_i - x_k)
+                \end{bmatrix}
+            \end{align*}
+
+            Rewrite cost function again:
+
+            \begin{align*}
+                \mathcal{E}_i &= w_i^T G_i w_i
+            \end{align*}
+
+            Now we have a constrained optimization problem, minimizing the cost function subject to the weights summing to $1$ -- mathematically written as $\mathbf{1}^T w_i = 1$. Consider the Lagrange multiplier problem:
+
+            \begin{align*}
+                \mathcal{L}(w_i, \lambda) &= w_i^T G_i w_i - \lambda (\mathbf{1}^T w_i - 1) \\
+                \frac{\partial \mathcal{L}}{\partial w_i} &= 2 G_i w_i - \lambda \mathbf{1} \\
+                \frac{\partial \mathcal{L}}{\partial \lambda} &= \mathbf{1}^T w_i - 1
+            \end{align*}
+
+            Thus we find the optimal weights must solve $2 G_i w_i = \lambda \mathbf{1}$ with a $\lambda$ chosen such that the weights sum up to one. To do so, we can simply solve $G_i w_i = \mathbf{1}$ then normalize $w_i$.
+        \end{proof}
+
+    \subsection{Solving for Lower Dimensional Embedding}
+
+        Want to show that for fixed weight matrix $W = [w_1 \ldots w_n]$, the ideal lower dimensional embeddings $y_i \in \mathbb{R}^m$ are given by the smallest $m$ eigenvectors of $M=(I - W)^T (I - W)$ after discarding the smallest eigenvector.
+
+        \begin{proof}
+            Seek to minimize the cost of lower dimensional dimensional data points $Y = [y_1 \ldots y_n]$ given a fixed weight matrix $W = [w_1 \ldots w_n]$:
+
+            \begin{align*}
+                \phi(Y) &= \sum_i ||y_i - \sum_j w_{ij} y_j ||^2 \\
+                &= Y^T (I - W)^T (I - W) Y \\
+                &= Y^T M Y \qquad \textrm{ for } M = (I - W)^T (I - W)
+            \end{align*}
+
+            Consider two constraints for lower dimensional embeddings $y_i$: ensure $y_i$ has dimension/rank $m$ and embedding is centered at the origin. Mathematically, these constraints are:
+
+            \begin{align*}
+                \frac{1}{n} Y^T Y = 1 \qquad \qquad \sum Y_i = 0
+            \end{align*}
+
+            Our cost function is (trivially) translationally equivariant with respect to $y_i$ so the second constraint is taken care of. To satisfy the first constraint, consider the Lagrange multiplier:
+
+            \begin{align*}
+                \mathcal{L}(Y, \mu) &= Y^T M Y - \mu (\frac{1}{n} Y^T Y - 1) \\
+                \frac{\partial \mathcal{L}}{\partial Y} &= 2 M Y - \frac{2 \mu}{n} Y = 0 \\
+                \frac{\partial \mathcal{L}}{\partial \mu} &= Y^T M Y
+            \end{align*}
+
+            From the second equation, we observe that $M Y = \frac{\mu}{n} Y$ which is satisfied by setting $y_i$ equal to the eigenvectors of $M$. Therefore, to minimize $Y^T M Y$, we set $Y$ to the $m$ smallest eigenvectors of matrix $M$.
+            
+            However, note that the smallest eigenvector-eigenvalue pair of $(\mathbf{1}, 0)$ is trivial. Thus we ultimately minimize the cost by setting $Y$ to the smallest $m$ eigenvalues after discarding the very smallest eigenvector. 
+        \end{proof}
+
 \section{Non-Manifold Spaces}
 
     An example of a non-manifold space is two unit circles, one centered at $(-1,0)$ and the other at $(1,0)$, that touch at a single point $(0,0)$:
