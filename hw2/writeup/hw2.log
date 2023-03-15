@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  12 MAR 2023 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  14 MAR 2023 22:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -332,23 +332,128 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] (./hw2.aux)
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+<images/ps1-dataset1-original.png, id=79, 361.35pt x 144.54pt>
+File: images/ps1-dataset1-original.png Graphic file (type png)
+<use images/ps1-dataset1-original.png>
+Package pdftex.def Info: images/ps1-dataset1-original.png  used on input line 254.
+(pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
+
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 254--255
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/ps1-dataset1.png, id=81, 1156.32pt x 1445.4pt>
+File: images/ps1-dataset1.png Graphic file (type png)
+<use images/ps1-dataset1.png>
+Package pdftex.def Info: images/ps1-dataset1.png  used on input line 259.
+(pdftex.def)             Requested size: 413.99895pt x 517.49852pt.
+
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 259--260
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7 <./images/ps1-dataset1-original.png>] [8 <./images/ps1-dataset1.png>]
+<images/ps1-dataset2-original.png, id=103, 361.35pt x 144.54pt>
+File: images/ps1-dataset2-original.png Graphic file (type png)
+<use images/ps1-dataset2-original.png>
+Package pdftex.def Info: images/ps1-dataset2-original.png  used on input line 268.
+(pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
+
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 268--269
+[][] 
+ []
+
+<images/ps1-dataset2.png, id=104, 1156.32pt x 1445.4pt>
+File: images/ps1-dataset2.png Graphic file (type png)
+<use images/ps1-dataset2.png>
+Package pdftex.def Info: images/ps1-dataset2.png  used on input line 273.
+(pdftex.def)             Requested size: 413.99895pt x 517.49852pt.
+
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 273--274
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9
+
+ <./images/ps1-dataset2-original.png>] [10 <./images/ps1-dataset2.png>]
+<images/ps2-dataset1-original.png, id=115, 361.35pt x 144.54pt>
+File: images/ps2-dataset1-original.png Graphic file (type png)
+<use images/ps2-dataset1-original.png>
+Package pdftex.def Info: images/ps2-dataset1-original.png  used on input line 282.
+(pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
+
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 282--283
+[][] 
+ []
+
+<images/ps2-dataset1.png, id=116, 1156.32pt x 1445.4pt>
+File: images/ps2-dataset1.png Graphic file (type png)
+<use images/ps2-dataset1.png>
+Package pdftex.def Info: images/ps2-dataset1.png  used on input line 287.
+(pdftex.def)             Requested size: 413.99895pt x 517.49852pt.
+
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 287--288
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11
+
+ <./images/ps2-dataset1-original.png>] [12 <./images/ps2-dataset1.png>]
+<images/ps2-dataset2-original.png, id=127, 361.35pt x 144.54pt>
+File: images/ps2-dataset2-original.png Graphic file (type png)
+<use images/ps2-dataset2-original.png>
+Package pdftex.def Info: images/ps2-dataset2-original.png  used on input line 296.
+(pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
+
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 296--297
+[][] 
+ []
+
+<images/ps2-dataset2.png, id=128, 1156.32pt x 1445.4pt>
+File: images/ps2-dataset2.png Graphic file (type png)
+<use images/ps2-dataset2.png>
+Package pdftex.def Info: images/ps2-dataset2.png  used on input line 301.
+(pdftex.def)             Requested size: 413.99895pt x 517.49852pt.
+
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 301--302
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13
+
+ <./images/ps2-dataset2-original.png>] [14 <./images/ps2-dataset2.png>] (./hw2.aux)
 Package rerunfilecheck Info: File `hw2.out' has not changed.
 (rerunfilecheck)             Checksum: EC3DA6420328CED65D34A2DF32F97A48;1489.
  ) 
 Here is how much of TeX's memory you used:
- 10222 strings out of 475075
- 161083 string characters out of 5779003
- 510354 words of memory out of 5000000
- 31466 multiletter control sequences out of 15000+600000
+ 10303 strings out of 475075
+ 163141 string characters out of 5779003
+ 510673 words of memory out of 5000000
+ 31522 multiletter control sequences out of 15000+600000
  479917 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,16n,77p,448b,509s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,16n,77p,581b,509s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw2.pdf (5 pages, 161467 bytes).
+Output written on hw2.pdf (14 pages, 1151481 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 204 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

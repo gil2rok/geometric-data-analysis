@@ -228,7 +228,78 @@
 
         Note that the order of function composition does not matter here.
 
+\section*{7 Approximation of MDS Matrix Factorization}
 
 sub-matrix along the diagonal is the same dissimilarity matrix via paper. 
+
+\section*{9 Dimensionality Reduction Bakeoff}
+
+        I examine four datasets -- two from ps1 and two from ps2 -- and subsequently subsample them at two different rates. I then run four dimensionality reduction algorithms -- MDS, IsoMap, LLE, and Laplacian Eigenmaps -- on each dataset.
+
+        When plotting the first dataset \ref{fig:ps1_clustering_original} \ref{fig:ps1_clustering}, all algorithms perform quite well -- even when subsampled -- except for Laplacian Eigenmaps.
+        
+        On the second dataset \ref{fig:ps2_clustering_original} \ref{fig:ps2_clustering}, all algorithms perform about the same. However, this dataset appears to contain random noise so there is not much to cluster. Interestingly, Laplacian Eigenmaps seems to find some slight (non-existant) structure in the data, embedding it spherically instead of uniformly.
+
+        On the third dataset \ref{fig:ps3_clustering_original} \ref{fig:ps3_clustering}, all algorithms perform quite well. This dataset is a 3D sphere, which most algorithms preserve well even when subsampling the data. Once more, however, Laplacian Eigenmaps performs worse as it deforms the circle.
+
+        On the fourth dataset \ref{fig:ps4_clustering_original} \ref{fig:ps4_clustering}, once more all dimensionality reduction techniques perform well except for Laplacian Eigenmaps. When using the entire dataset, the dimensionality reduction algorithms embedd the data as two circles. However, when subsampling to lower and lower resolutions, the dimensionality reduction algorithms pinch one circle into a skinny band with no center (which is no longer recognizable as a circle).
+
+        Ultimately, Laplacian Eigenmaps was the worst performing dimensionality reduction technique from visual inspection. However, both Laplacian Eigenmaps and LLE suffer from large sensitivity to hyper-paramter changes. This may drastically and unpredictably alter the performance of these algorithms. 
+
+        \subsection*{9.1 Dataset 1}
+            The first dataset I examine is ps1-clustering.txt. I first plot the original dataset and then plot different dimensionality reduction algorithms.
+ 
+            \begin{figure}[h]
+                \label{fig:ps1_clustering_original}
+                \includegraphics[]{images/ps1-dataset1-original.png}
+            \end{figure}
+
+            \begin{figure}[h]
+                \label{fig:ps1_clustering}
+                \includegraphics[width=1.2\linewidth]{images/ps1-dataset1.png}
+            \end{figure}
+            \clearpage
+            
+        \subsection*{9.2 Dataset 2}
+            The second dataset I examine is ps1-data.txt. I first plot the original dataset and then plot different dimensionality reduction algorithms.
+    
+            \begin{figure}[h]
+                \label{fig:ps2_clustering_original}
+                \includegraphics[]{images/ps1-dataset2-original.png}
+            \end{figure}
+
+            \begin{figure}[h]
+                \label{fig:ps2_clustering}
+                \includegraphics[width=1.2\linewidth]{images/ps1-dataset2.png}
+            \end{figure}
+            \clearpage
+
+        \subsection*{9.3 Dataset 3}
+            The second dataset I examine is ps2-data-1.txt. I first plot the original dataset and then plot different dimensionality reduction algorithms.
+
+            \begin{figure}[h]
+                \label{fig:ps3_clustering_original}
+                \includegraphics[]{images/ps2-dataset1-original.png}
+            \end{figure}
+
+            \begin{figure}[h]
+                \label{fig:ps3_clustering}
+                \includegraphics[width=1.2\linewidth]{images/ps2-dataset1.png}
+            \end{figure}
+            \clearpage
+
+        \subsection*{9.4 Dataset 4}
+            The second dataset I examine is ps2-data-2.txt. I first plot the original dataset and then plot different dimensionality reduction algorithms.
+
+            \begin{figure}[h]
+                \label{fig:ps4_clustering_original}
+                \includegraphics[]{images/ps2-dataset2-original.png}
+            \end{figure}
+
+            \begin{figure}[h]
+                \label{fig:ps4_clustering}
+                \includegraphics[width=1.2\linewidth]{images/ps2-dataset2.png}
+            \end{figure}
+            \clearpage
 
 \end{document}

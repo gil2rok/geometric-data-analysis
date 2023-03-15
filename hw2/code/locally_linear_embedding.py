@@ -1,15 +1,14 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 from scipy.linalg import solve
 from scipy.sparse import lil_matrix
 from scipy.sparse.linalg import eigsh
 from sklearn.neighbors import NearestNeighbors
 
-class LocallyLinearEmbeddings:
+class LocallyLinearEmbedding:
     """ locally linear embedding
-    
     """
+    
     def __init__(self, n_neighbors, embedding_dim):
         self.n_neighbors = n_neighbors
         self.embedding_dim = embedding_dim
