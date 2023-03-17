@@ -230,7 +230,34 @@
 
 \section*{7 Approximation of MDS Matrix Factorization}
 
-sub-matrix along the diagonal is the same dissimilarity matrix via paper. 
+        In classical MDS, we factorize the matrix $B := -\frac{1}{2} H D H$ for distance matrix $D$ and centering matrix $H := I - \frac{1}{n} \boldsymbol{1} \boldsymbol{1}^T$. We specifically factorize the matrix $B$ with an eigendecomposition such that $B = U \Lambda U^T$.
+
+        Now consider the true factorization of $n$ datapoints, $B_n$ and a subsampled factorization of $m$ datapoints, $B_m$. Note that $B_m$ is a block matrix in the upper left corner of $B_n$.
+
+        Furthermore, note that because $B_m$ is a diagonalizable matrix, we can write its eigenvalues and eigenvectors as:
+
+        \begin{align*}
+            B_m v_1 &= \lambda_1 v_1 \\
+            & \vdots \\
+            B_m v_m &= \lambda_m v_m 
+        \end{align*}
+
+        This can be rewritten compactly as $B_m U = U \Lambda$, which can be rewritten as the decomposition $B_m = U \Lambda U^T$
+
+        Similarly, we can rewrite the eigenvalues and eigenvectors of $B_n$ as:
+
+        \begin{align*}
+            B_n v_1 &= \lambda_1 v_1 \\
+            & \vdots \\
+            B_n v_m &= \lambda_m v_m \\
+            & \vdots \\
+            B_n v_n &= \lambda_n v_n
+        \end{align*}
+
+        This again can be rewritten compactly as $B_n U = U \Lambda$, which can be rewritten as the decomposition $B_n = U \Lambda U^T$.
+
+        However, as more points are being subsampled (as $m$ increases towards $n$), the distance matrix $D$ that defines $B_m$ and $B_n$ become more and more similar. Thus their eigenvalue and eigenvector pairs become more and more similar, ultimately ensuring that their matrix factorization becomes the same.
+
 
 \section*{9 Dimensionality Reduction Bakeoff}
 

@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1678845815 "/Users/gil2rok/school/geometric-data-analysis/hw2/writeup/hw2.tex" "hw2.pdf" "hw2" 1678845816
-  "/Users/gil2rok/school/geometric-data-analysis/hw2/writeup/hw2.tex" 1678845815 15896 e1c4746055f7ded07e07799eea268e4e ""
+["pdflatex"] 1679017304 "/Users/gil2rok/school/geometric-data-analysis/hw2/writeup/hw2.tex" "hw2.pdf" "hw2" 1679017306
+  "/Users/gil2rok/school/geometric-data-analysis/hw2/writeup/hw2.tex" 1679017304 17438 0cdc7abbec64e48d5f1b7a98ebf6923b ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -107,9 +107,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1663207547 4595816 106c4e272f709332e200b7ab82c17944 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663207570 3059211 5ab6d6acc80cf4984c72eced45b8d200 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "hw2.aux" 1678845816 2172 729d1815bca5fc67f7ee075e0cbb61f9 "pdflatex"
-  "hw2.out" 1678845816 1489 ec3da6420328ced65d34a2df32f97a48 "pdflatex"
-  "hw2.tex" 1678845815 15896 e1c4746055f7ded07e07799eea268e4e ""
+  "hw2.aux" 1679017306 2172 729d1815bca5fc67f7ee075e0cbb61f9 "pdflatex"
+  "hw2.out" 1679017306 1489 ec3da6420328ced65d34a2df32f97a48 "pdflatex"
+  "hw2.tex" 1679017304 17438 0cdc7abbec64e48d5f1b7a98ebf6923b ""
   "images/ps1-dataset1-original.png" 1678844697 29589 5021fc77f80f6c11df25c7587b6b81df ""
   "images/ps1-dataset1.png" 1678843886 204473 13039c46d3e5bd28c2c55c15bb590c27 ""
   "images/ps1-dataset2-original.png" 1678844170 65942 65c53ae04ed29968cee164dc4f30ad92 ""

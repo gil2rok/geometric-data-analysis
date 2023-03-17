@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  14 MAR 2023 22:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  16 MAR 2023 21:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -332,51 +332,48 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
-<images/ps1-dataset1-original.png, id=79, 361.35pt x 144.54pt>
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6]
+<images/ps1-dataset1-original.png, id=86, 361.35pt x 144.54pt>
 File: images/ps1-dataset1-original.png Graphic file (type png)
 <use images/ps1-dataset1-original.png>
-Package pdftex.def Info: images/ps1-dataset1-original.png  used on input line 254.
+Package pdftex.def Info: images/ps1-dataset1-original.png  used on input line 281.
 (pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
 
-Overfull \hbox (16.34912pt too wide) in paragraph at lines 254--255
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 281--282
 [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/ps1-dataset1.png, id=81, 1156.32pt x 1445.4pt>
+<images/ps1-dataset1.png, id=88, 1156.32pt x 1445.4pt>
 File: images/ps1-dataset1.png Graphic file (type png)
 <use images/ps1-dataset1.png>
-Package pdftex.def Info: images/ps1-dataset1.png  used on input line 259.
+Package pdftex.def Info: images/ps1-dataset1.png  used on input line 286.
 (pdftex.def)             Requested size: 413.99895pt x 517.49852pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 259--260
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 286--287
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] [7 <./images/ps1-dataset1-original.png>] [8 <./images/ps1-dataset1.png>]
+[7 <./images/ps1-dataset1-original.png>] [8 <./images/ps1-dataset1.png>]
 <images/ps1-dataset2-original.png, id=103, 361.35pt x 144.54pt>
 File: images/ps1-dataset2-original.png Graphic file (type png)
 <use images/ps1-dataset2-original.png>
-Package pdftex.def Info: images/ps1-dataset2-original.png  used on input line 268.
+Package pdftex.def Info: images/ps1-dataset2-original.png  used on input line 295.
 (pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
 
-Overfull \hbox (16.34912pt too wide) in paragraph at lines 268--269
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 295--296
 [][] 
  []
 
 <images/ps1-dataset2.png, id=104, 1156.32pt x 1445.4pt>
 File: images/ps1-dataset2.png Graphic file (type png)
 <use images/ps1-dataset2.png>
-Package pdftex.def Info: images/ps1-dataset2.png  used on input line 273.
+Package pdftex.def Info: images/ps1-dataset2.png  used on input line 300.
 (pdftex.def)             Requested size: 413.99895pt x 517.49852pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 273--274
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 300--301
 [][] 
  []
 
@@ -389,20 +386,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/ps2-dataset1-original.png, id=115, 361.35pt x 144.54pt>
 File: images/ps2-dataset1-original.png Graphic file (type png)
 <use images/ps2-dataset1-original.png>
-Package pdftex.def Info: images/ps2-dataset1-original.png  used on input line 282.
+Package pdftex.def Info: images/ps2-dataset1-original.png  used on input line 309.
 (pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
 
-Overfull \hbox (16.34912pt too wide) in paragraph at lines 282--283
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 309--310
 [][] 
  []
 
 <images/ps2-dataset1.png, id=116, 1156.32pt x 1445.4pt>
 File: images/ps2-dataset1.png Graphic file (type png)
 <use images/ps2-dataset1.png>
-Package pdftex.def Info: images/ps2-dataset1.png  used on input line 287.
+Package pdftex.def Info: images/ps2-dataset1.png  used on input line 314.
 (pdftex.def)             Requested size: 413.99895pt x 517.49852pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 287--288
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 314--315
 [][] 
  []
 
@@ -415,20 +412,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/ps2-dataset2-original.png, id=127, 361.35pt x 144.54pt>
 File: images/ps2-dataset2-original.png Graphic file (type png)
 <use images/ps2-dataset2-original.png>
-Package pdftex.def Info: images/ps2-dataset2-original.png  used on input line 296.
+Package pdftex.def Info: images/ps2-dataset2-original.png  used on input line 323.
 (pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
 
-Overfull \hbox (16.34912pt too wide) in paragraph at lines 296--297
+Overfull \hbox (16.34912pt too wide) in paragraph at lines 323--324
 [][] 
  []
 
 <images/ps2-dataset2.png, id=128, 1156.32pt x 1445.4pt>
 File: images/ps2-dataset2.png Graphic file (type png)
 <use images/ps2-dataset2.png>
-Package pdftex.def Info: images/ps2-dataset2.png  used on input line 301.
+Package pdftex.def Info: images/ps2-dataset2.png  used on input line 328.
 (pdftex.def)             Requested size: 413.99895pt x 517.49852pt.
 
-Overfull \hbox (68.99895pt too wide) in paragraph at lines 301--302
+Overfull \hbox (68.99895pt too wide) in paragraph at lines 328--329
 [][] 
  []
 
@@ -444,13 +441,13 @@ Package rerunfilecheck Info: File `hw2.out' has not changed.
 Here is how much of TeX's memory you used:
  10303 strings out of 475075
  163141 string characters out of 5779003
- 510673 words of memory out of 5000000
+ 511673 words of memory out of 5000000
  31522 multiletter control sequences out of 15000+600000
  479917 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,16n,77p,581b,509s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw2.pdf (14 pages, 1151481 bytes).
+Output written on hw2.pdf (14 pages, 1154655 bytes).
 PDF statistics:
  204 PDF objects out of 1000 (max. 8388607)
  144 compressed objects within 2 object streams
