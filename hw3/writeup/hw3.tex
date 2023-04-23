@@ -1,0 +1,165 @@
+\documentclass{article}
+
+\usepackage{amsmath,amsfonts,amssymb,mathtools} % formatting math
+\usepackage{amsthm} % for proofs
+\usepackage{verbatim} % for block comments
+\usepackage{hyperref} % for links
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+%+++++++++++++++++++++++++++++++
+
+% FANCY LETTERS
+\newcommand{\R}{\mathbb{R}} % the real number R
+\newcommand{\E}{\mathbb{E}} % expectation symbol E
+
+% BRACKETS, PARENTHESIS, AND CURLY BRACKETS
+\newcommand{\lb}{\left[} % left bracket
+\newcommand{\rb}{\right]} % right bracket
+\newcommand{\lp}{\left(} % left parenthesis
+\newcommand{\rp}{\right)} % right parenthesis
+\newcommand{\lc}{\left\{} % left curly bracket
+\newcommand{\rc}{\right\}} % right curly bracket
+
+\title{GDA HW 3}
+\author{Gilad Turok, gt2453 \\ \href{mailto:gt2453@columbia.edu}{gt2453@columbia.edu}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Metric Tree Curvature}
+
+\section{Hausdorff and Gromov-Hausdorff Metrics}
+
+Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Recall that a metric space is defined as $(M, d)$ for set $M$ and metric (distance) function $d$ such that for all $x,y,z \in M$:
+
+\begin{align*}
+    d_M(x,y) &= 0 \iff x = y \qquad &\textrm{(equality)}\\
+    d_M(x,y) &> 0 \textrm{ for } x \neq y \qquad &\textrm{(positivity)} \\
+    d_M(x,y) &= d_M(y,x) \qquad &\textrm{(symmetry)} \\
+    d_M(x, z) &\leq d_M(x,y) + d_M(y,z) \qquad &\textrm{(triangle inequality)}
+\end{align*}   
+
+\subsection{Hausdorff Metric}
+
+    The Hausdorff distance is defined on two non-empty subsets $X, Y$ of a metric space $(M,d_M)$ as:
+
+    \begin{equation*}
+        d_H(X,Y) = \max \left\{ \sup_{x \in X} \inf_{y \in Y} d_M(x,y), \sup_{y \in Y} \inf_{x \in X} d_M(x,y) \right\}
+    \end{equation*}
+
+    Want to show that the Hausdorff distance $d_H$ is a metric that satisifes the four properties above.
+
+    \begin{proof}
+    We will prove all four properties of a metric in a metric space for the Hausdorff distance.
+    
+    \begin{enumerate}
+    \item \textbf{Equality:}
+        To show the property of equality we prove both directions. If $X=Y$ then: 
+
+        \begin{align*}
+            d_H(X,Y) &= d_H(X,X) \\
+            &= \max \left\{ \sup_{x \in X} \inf_{x^\prime \in X} d_M(x,x^\prime), \sup_{x \in X} \inf_{x^\prime \in X} d_M(x,x^\prime) \right\} \\
+            &= \max \left\{ 0, 0 \right\} \qquad \qquad \textrm{by  } d_M(x,x^\prime)=0 \textrm{ for }x=x^\prime\\
+            &= 0
+        \end{align*}
+
+        If $d_H(X,Y) = 0$ then:
+
+        \begin{align*}
+            d_H(X,Y) &= 0 \\
+            &= \max \left\{ \sup_{x \in X} \inf_{y \in Y} d_M(x,y), \sup_{y \in Y} \inf_{x \in X} d_M(x,y) \right\} \\
+        \end{align*}
+
+        By the $\max$ operation, one or both arguments must be equal to zero. However, since metric-distances are non-negative, both arguments must be zero:
+
+        \begin{align*}
+            \sup_{x \in X} \inf_{y \in Y} d_M(x,y) &= \sup_{y \in Y} \inf_{x \in X} d_M(x,y) = 0
+        \end{align*}
+
+        By the definition of the $\sup$ and $\inf$ operators, this implies that for all $x \in X$ and $y \in Y$, $d_M(x,y) = 0$. Since $d_M$ is a metric, this implies that $x=y$ for all $x \in X$ and $y \in Y$. Thus, $X=Y$.
+
+        Therefore $d_H$ satisfies the property of equality.
+
+    \item \textbf{Positivity:}
+        To show the property of positivity we prove the following: if $X \neq Y$ then $d_H(X,Y) > 0$. We will prove this by contradiction. Suppose $d_H(X,Y) = 0$ for $X \neq Y$. Then:
+
+        \begin{align*}
+            d_H(X,Y) &= 0 \\
+            &= \max \left\{ \sup_{x \in X} \inf_{y \in Y} d_M(x,y), \sup_{y \in Y} \inf_{x \in X} d_M(x,y) \right\} \\
+        \end{align*}
+
+        By the $\max$ operation, one or both arguments must be equal to zero. However, since metric-distances are non-negative, both arguments must be zero:
+
+        \begin{align*}
+            \sup_{x \in X} \inf_{y \in Y} d_M(x,y) &= \sup_{y \in Y} \inf_{x \in X} d_M(x,y) = 0
+        \end{align*}
+
+        By the definition of the $\sup$ and $\inf$ operators, this implies that for all $x \in X$ and $y \in Y$, $d_M(x,y) = 0$. Since $d_M$ is a metric, this implies that $x=y$ for all $x \in X$ and $y \in Y$. Thus, $X=Y$.
+
+        This contradicts the assumption that $X \neq Y$. Therefore $d_H$ satisfies the property of positivity.
+    
+    \item \textbf{Symmetry:}
+        To show the property of symmetry, prove that $d_H(X,Y) = d_H(Y,X)$. If $X = Y$, this proof is trivial because $d_H(X,Y) = 0$ and $d_H(Y,X) =0$. If $X \neq Y$, then:
+
+        \begin{align*}
+            d_H(X,Y) &= \max \left\{ \sup_{x \in X} \inf_{y \in Y} d_M(x,y), \sup_{y \in Y} \inf_{x \in X} d_M(x,y) \right\} \\
+            &= \max \left\{ \sup_{y \in Y} \inf_{x \in X} d_M(x,y), \sup_{x \in X} \inf_{y \in Y} d_M(x,y) \right\} \\
+            &= d_H(Y,X)
+        \end{align*}
+
+    \item \textbf{Triangle Inequality:}
+        To show the property of triangle inequality, prove that $d_H(X,Z) \leq d_H(X,Y) + d_H(Y,Z)$. If $X = Y$ or $Y = Z$, this proof is trivial because $d_H(X,Y) = 0$ or $d_H(Y,Z) = 0$ and $d_H(X,Z) = 0$. If $X \neq Y$ and $Y \neq Z$, then:
+
+        \begin{align*}
+            d_H(X,Z) &= \max \left\{ \sup_{x \in X} \inf_{z \in Z} d_M(x,z), \sup_{z \in Z} \inf_{x \in X} d_M(x,z) \right\} \\
+        \end{align*}
+
+        Because $d_M$ is a metric, it satisfies the triangle inequality for $x,y,z$ for all choices of $x,y,z$. In particular, any choice of $y$ holds, letting us pick $y^\prime := \inf_{y \in Y} d_M(x, y)$ and $y^{\prime \prime} := \inf_{y \in Y} d_M(y, z)$:
+
+        \begin{align*}
+            d_H(X,Z) &= \max \left\{ \sup_{x \in X} \inf_{z \in Z} d_M(x,z), \sup_{z \in Z} \inf_{x \in X} d_M(x,z) \right\} \\
+            & \leq \max \left\{ \sup_{x \in X} \inf_{z \in Z} \Big( d_M(x,y^\prime) + d_M(y^\prime,z) \Big), \sup_{z \in Z} \inf_{x \in X} \Big( d_M(x,y^{\prime \prime}) + d_M(y^{\prime \prime},z) \Big) \right\} \\
+            & = \max \left\{ \sup_{x \in X} d_M(x,y^\prime) + \inf_{z \in Z} d_M(y^\prime,z), \sup_{z \in Z} d_M(y^{\prime \prime},z) + \inf_{x \in X} d_M(x, y^{\prime \prime}) \right\} \\
+            &\leq \max \left\{ \sup_{x \in X} d_M(x,y^\prime), \inf_{x \in X} d_M(x, y^{\prime \prime})  \right\} + \max \left\{  \inf_{z \in Z} d_M(y^\prime,z), \sup_{z \in Z} d_M(y^{\prime \prime},z)  \right\} \\
+            &\leq \max \left\{ \sup_{x \in X} \inf_{y \in Y} d_M(x,y), \inf_{x \in X} d_M(x, y^{\prime \prime})  \right\} + \max \left\{  \inf_{z \in Z} d_M(y^\prime,z), \sup_{z \in Z} \inf_{y \in Y} d_M(y,z)  \right\} \\
+            &\leq \max \left\{ \sup_{x \in X} \inf_{y \in Y} d_M(x,y), \inf_{x \in X} \sup_{y \in Y} d_M(x, y) \right\} + \max \left\{  \inf_{z \in Z} \sup_{y \in Y} d_M(y,z), \sup_{z \in Z} \inf_{y \in Y} d_M(y,z)  \right\} \\
+            &= d_H(X,Y) + d_H(Y,Z)
+        \end{align*}
+
+        max(a+b,c+d) = max(a,c) + max(b,d)
+
+        \begin{align*}
+            d_H(X,Y) + d_H(Y,Z) &= \max \left\{ \sup_{x \in X} \inf_{y \in Y} d_M(x,y), \sup_{y \in Y} \inf_{x \in X} d_M(x,y) \right\} \\
+            & \quad + \max \left\{ \sup_{y \in Y} \inf_{z \in Z} d_M(y,z), \sup_{z \in Z} \inf_{y \in Y} d_M(y,z) \right\} \\
+            &= \max \Big\{  \sup_{x \in X} \inf_{y \in Y} d_M(x,y) + \sup_{y \in Y} \inf_{z \in Z} d_M(y,z), \\
+            & \quad \quad \quad \quad \sup_{x \in X} \inf_{y \in Y} d_M(x,y) + \sup_{z \in Z} \inf_{y \in Y} d_M(y,z), \\
+            & \quad \quad \quad \quad \sup_{y \in Y} \inf_{x \in X} d_M(x,y) + \sup_{y \in Y} \inf_{z \in Z} d_M(y,z), \\
+            & \quad \quad \quad \quad \sup_{y \in Y} \inf_{x \in X} d_M(x,y) + \sup_{z \in Z} \inf_{y \in Y} d_M(y,z)  \Big\} \\
+        \end{align*}
+
+
+        Let $y_{inf} := \inf_{y \in Y}$ and $y_{sup} := \sup_{y \in Y}$.
+
+        \begin{align*}
+            d_H(X,Y) + d_H(Y,Z) &= \max \Big\{  \sup_{x \in X} \inf_{y \in Y} d_M(x,y) + \sup_{y \in Y} \inf_{z \in Z} d_M(y,z), \\
+            & \quad \quad \quad \quad \sup_{x \in X} d_M(x,y_{inf}) + \sup_{z \in Z} d_M(y_{inf},z), \\
+            & \quad \quad \quad \quad \inf_{x \in X} d_M(x,y_{sup}) + \inf_{z \in Z} d_M(y_{sup},z), \\
+            & \quad \quad \quad \quad \sup_{y \in Y} \inf_{x \in X} d_M(x,y) + \sup_{z \in Z} \inf_{y \in Y} d_M(y,z)  \Big\} \\
+        \end{align*}
+
+        
+
+    \end{enumerate}
+    \end{proof}
+
+
+
+
+\end{document}
