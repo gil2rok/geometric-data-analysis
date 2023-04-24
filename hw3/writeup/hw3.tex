@@ -34,6 +34,23 @@
 \maketitle
 
 \section{Metric Tree Curvature}
+    Want to show that a metric tree space has negative curvate, where a metric tree space $(M,d)$ is a metric space such that:
+    
+    \begin{align*}
+        \forall x,y \in M, \exists \textrm{a unique path } x \leadsto y \textrm{ that is homeomorphic to } [0,1]
+    \end{align*}
+
+    \begin{proof}
+    We will show that a metric tree space $(M,d)$ has negative curvature by showing that for all $x,y,z \in M$:
+
+    \begin{align*}
+        d(x,y) + d(y,z) - d(x,z) \geq 0
+    \end{align*}
+
+    We will prove this by cases. First, consider the case where $x,y,z$ are all on the same path. Then, $d(x,y) + d(y,z) = d(x,z)$, so $d(x,y) + d(y,z) - d(x,z) = 0$. Thus, the inequality holds.
+
+    Now, consider the case where $x,y,z$ are not all on the same path. Then, there are two cases: either $x$ and $y$ are on the same path, or $y$ and $z$ are on the same path. Without loss of generality, assume that $x$ and $y$ are on the same path. Then, $d(x,y) = d(x,z) - d(y,z)$. Thus, $d(x,y) + d(y,z) - d(x,z) = d(x,z) - d(y,z) + d(y,z) - d(x,z) = 0$. Thus, the inequality holds.
+    \end{proof}
 
 \section{Hausdorff and Gromov-Hausdorff Metrics}
 
@@ -103,7 +120,7 @@ Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Rec
 
         By the definition of the $\sup$ and $\inf$ operators, this implies that for all $x \in X$ and $y \in Y$, $d_M(x,y) = 0$. Since $d_M$ is a metric, this implies that $x=y$ for all $x \in X$ and $y \in Y$. Thus, $X=Y$.
 
-        This contradicts the assumption that $X \neq Y$. Therefore $d_H$ satisfies the property of positivity.
+        This contradicts the assumption that $X \neq Y$. Therefore $d_H$ satisfies the property of positivity since $d_M$ is always non-negative.
     
     \item \textbf{Symmetry:}
         To show the property of symmetry, prove that $d_H(X,Y) = d_H(Y,X)$. If $X = Y$, this proof is trivial because $d_H(X,Y) = 0$ and $d_H(Y,X) =0$. If $X \neq Y$, then:
@@ -132,34 +149,90 @@ Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Rec
             &\leq \max \left\{ \sup_{x \in X} \inf_{y \in Y} d_M(x,y), \inf_{x \in X} \sup_{y \in Y} d_M(x, y) \right\} + \max \left\{  \inf_{z \in Z} \sup_{y \in Y} d_M(y,z), \sup_{z \in Z} \inf_{y \in Y} d_M(y,z)  \right\} \\
             &= d_H(X,Y) + d_H(Y,Z)
         \end{align*}
-
-        max(a+b,c+d) = max(a,c) + max(b,d)
-
-        \begin{align*}
-            d_H(X,Y) + d_H(Y,Z) &= \max \left\{ \sup_{x \in X} \inf_{y \in Y} d_M(x,y), \sup_{y \in Y} \inf_{x \in X} d_M(x,y) \right\} \\
-            & \quad + \max \left\{ \sup_{y \in Y} \inf_{z \in Z} d_M(y,z), \sup_{z \in Z} \inf_{y \in Y} d_M(y,z) \right\} \\
-            &= \max \Big\{  \sup_{x \in X} \inf_{y \in Y} d_M(x,y) + \sup_{y \in Y} \inf_{z \in Z} d_M(y,z), \\
-            & \quad \quad \quad \quad \sup_{x \in X} \inf_{y \in Y} d_M(x,y) + \sup_{z \in Z} \inf_{y \in Y} d_M(y,z), \\
-            & \quad \quad \quad \quad \sup_{y \in Y} \inf_{x \in X} d_M(x,y) + \sup_{y \in Y} \inf_{z \in Z} d_M(y,z), \\
-            & \quad \quad \quad \quad \sup_{y \in Y} \inf_{x \in X} d_M(x,y) + \sup_{z \in Z} \inf_{y \in Y} d_M(y,z)  \Big\} \\
-        \end{align*}
-
-
-        Let $y_{inf} := \inf_{y \in Y}$ and $y_{sup} := \sup_{y \in Y}$.
-
-        \begin{align*}
-            d_H(X,Y) + d_H(Y,Z) &= \max \Big\{  \sup_{x \in X} \inf_{y \in Y} d_M(x,y) + \sup_{y \in Y} \inf_{z \in Z} d_M(y,z), \\
-            & \quad \quad \quad \quad \sup_{x \in X} d_M(x,y_{inf}) + \sup_{z \in Z} d_M(y_{inf},z), \\
-            & \quad \quad \quad \quad \inf_{x \in X} d_M(x,y_{sup}) + \inf_{z \in Z} d_M(y_{sup},z), \\
-            & \quad \quad \quad \quad \sup_{y \in Y} \inf_{x \in X} d_M(x,y) + \sup_{z \in Z} \inf_{y \in Y} d_M(y,z)  \Big\} \\
-        \end{align*}
-
-        
-
     \end{enumerate}
+
+    Therefore, because the Hausdorff distance has all four properties of a metric, it is inded a metric.
     \end{proof}
 
+    \subsection{Gromov-Hausdorff Metric}
 
+    The Gromov-Hausdorff distance is defined for two metric spaces $(X, d_X)$ and $(Y, d_Y)$ with two isometric functions $\phi: X \rightarrow A$ and $\psi: Y \rightarrow A$ as: 
 
+    \begin{equation*}
+        d_{GH}(X,Y) := \inf_{\phi, \psi} d_H(\phi(X), \psi(Y))
+    \end{equation*}
+
+    Want to show that the Gromov-Hausdorff distance $d_{GH}$ is a metric that satisifies the four metric properties above.
+
+    \begin{proof}
+    \begin{enumerate}
+    We will prove all four proerties of a metric in a metric space for the Gromov-Hausdorff distance.
+
+        \item \textbf{Equality:} We will prove both directions of $d_{GH}(X,Y) = 0 \iff X = Y $
+        
+        First, let $d_{GH}(X,Y) = 0$. Because $d_H \geq 0$, we know by the def of infimum that $d_H(\phi(X), \psi(Y)) = 0$. Because $d_H$ is a metric, we know that $\phi(X) = \psi(Y)$ only when $X=Y$. Therefore, $d_{GH}(X,Y) = 0 \implies X = Y$.
+
+        Now let $X=Y$. By the metric property of the Hausdorff distance, we know $d_H(X,Y) = 0$ for $X=Y$. Therefore, no matter the isometric embeddings $\phi$ and $\psi$, there is always an isometric embedding $\phi = \psi$ such that $d_H(\phi(X), \psi(Y)) = 0$. Therefore, $d_{GH}(X,Y) = 0$.
+
+        \item \textbf{Positivity:} We will prove that $d_{GH}(X,Y) > 0$ for all $X \neq Y $.
+        
+        Because $d_H$ is a metric, we know that $d_H(\phi(X), \psi(Y)) > 0$ is always true when $X \neq Y$. Therefore, no matter the isometric embedding, the infimum of $d_H(\phi(X), \psi(Y))$ is always positive. Thus $d_{GH}(X,Y) > 0$.
+
+        \item \textbf{Symmetry:} We will prove that $d_{GH}(X,Y) = d_{GH}(Y,X)$. This is trivially true by relabeling $X$ and $Y$ since the isometric embedding functions $\phi, \psi$ can be anything.
+        
+        \item \textbf{Triangle Inequality:} We will prove that $d_{GH}(X,Z) \leq d_{GH}(X,Y) + d_{GH}(Y,Z)$ for all $X,Y,Z$.
+        
+       By the metric property of the Hausdorff distance we know for spaces $\phi(X), \theta(Y), \psi(Z)$ that:
+
+       \begin{align*}
+            d_H(\phi(X), \psi(Z)) \leq d_H(\phi(X), \theta(Y)) + d_H(\theta(Y), \psi(Z))
+       \end{align*}
+
+       Taking the infimum of both sides, we get:
+
+       \begin{align*}
+            d_{GH}(X,Z) \leq d_{GH}(X,Y) + d_{GH}(Y,Z)
+       \end{align*}
+    \end{enumerate}
+
+    Thus we have shown that the Gromov-Hausdorff distance is a metric.
+    \end{proof}
+
+\section{Bounding Gromov-Hausdorff Distance With Diameter}
+
+    Want to bound the Gromov-Hausdorff distance $d_GH$ in terms of the diameter of metric spaces $X$ and $Y$:
+
+    \begin{align*}
+        \textrm{diam}(X) := \max_{x,x^\prime \in X} d_X(x,x^\prime) \qquad \textrm{diam}(Y) := \max_{y,y^\prime \in Y} d_X(y,y^\prime) \\
+    \end{align*}
+
+    \begin{proof}
+        Let $\tilde{R}$ be an arbitrary relation.
+    \begin{align*}
+        d_{GH}(X,Y) &= \inf_{\phi, \psi} d_H(\phi(X), \psi(Y)) \\
+        &= \frac{1}{2} \inf_R \sup_{\substack{(x,y) \in R \\ (x^\prime, y^\prime) \in R}} |d_X(x, x^\prime) - d_Y(y, y^\prime) | \\
+        & \leq \frac{1}{2} \sup_{\substack{(x,y) \in \tilde{R} \\ (x^\prime, y^\prime) \in \tilde{R}}} |d_X(x, x^\prime) - d_Y(y, y^\prime) |  \\
+        &\leq \frac{1}{2} \sup_{\substack{(x,y) \in \tilde{R} \\ (x^\prime, y^\prime) \in \tilde{R}}} \left\{ d_X(x,x^\prime), d_Y(y, y^\prime) \right\} \\
+        &= \frac{1}{2} \max \left\{ \textrm{diam}(X), \textrm{diam}(Y) \right\}
+    \end{align*}
+    \end{proof}
+
+\section{Bounding Gromov-Hausdorff Distance With $\epsilon$-Nets}
+
+    Want to bound the Gromov Hausdorff distance $d_{GH}(X,Y)$ for metric spaces $X$ and $Y$. Here, $Y \subset X$ is an $\epsilon$-net such that:
+
+    \begin{equation*}
+        \forall x \in X, \exists y \in Y \text{ such that } d(x,y) < \epsilon
+    \end{equation*}
+
+    \begin{proof}
+        \begin{align*}
+            d_{GH}(X,Y) &= \inf_{\phi, \psi} d_H(\phi(X), \psi(Y)) \\
+            &= \inf_{\phi, \psi} \max \left\{ \sup_{x \in \phi(X)} \inf_{y \in \psi(Y)} d(x,y), \sup_{y \in \psi(Y)} \inf_{x \in \phi(X)} d(x,y) \right\} \\
+            & \leq \inf_{\phi, \psi} \max \left\{ \sup_{x \in \phi(X)} \inf_{y \in \psi(Y)} \epsilon, \sup_{y \in \psi(Y)} \inf_{x \in \phi(X)} \epsilon \right\} \\
+            &= \inf_{\phi, \psi} \max \left\{ \epsilon, \epsilon \right\} \\
+            &= \epsilon
+        \end{align*}
+    \end{proof}
 
 \end{document}
