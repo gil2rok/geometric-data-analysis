@@ -40,4 +40,4 @@
 - **Estimate the intrinsic dimension** by approximating the tangent plane for Gaussians and hypercubes
 - Emperically prove the **Johnson-Lindenstrauss Lemma** with numerical experiments
 - Find the **centroid in Wasserstein space** to "average" distrubutions in $\mathbb{R}^2$ of MNIST digits
-- On tooth and bone datasets, use an **approximation of the Gromov-Hausdorff metric $d_{GH}$ to cluster** the data
+- Use an **approximation of the Gromov-Hausdorff metric $d_{GH}$ to cluster** tooth and bone datasets from [here](https://drive.google.com/file/d/1S9oJlcxHhRGqEt5xgQGVXjcha2qAJp9r/view)
