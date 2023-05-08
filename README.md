@@ -31,7 +31,7 @@
 ## **HW3** :round_pushpin: ##
 **Prove properties of the tree metric $d_T$, Hausdorff metric $d_H$, and Gromov-Hausdorff metric $d_{GH}$:**
 
-- Metric tree spaces $\mathcal{T}$ have nonpositive curvature
+- Metric tree spaces $(T, d_T)$ have nonpositive curvature
 - The Hausdorff $d_H$ and Gromov-Hausdorff metrics $d_{GH}$ are formal metrics
 - The Gromov-Hausdorff metric $d_{GH}$ is bounded by the diameter of a space $diam(X)$
 - The Gromov Hausdorff metric $d_{GH}$ is bounded by $\epsilon$ for spaces $X,Y$ where $Y \subset X$ is an $\epsilon$-net
