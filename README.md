@@ -2,7 +2,7 @@
 
 **The work of Gilad Turok for [COMS 4995] Geometric Data Analysis with Professor Andrew Blumberg in Spring of 2023 at Columbia University :pencil2: :triangular_ruler: :bar_chart:**
 
-(Unfortunately, there are no good emojis for topology or manifolds. Until this crime is remedied, I will be using a curly loop and doughnuts (torus) as above.)
+(Unfortunately, there are no good emojis for topology or manifolds. Until this crime is remedied, I will be using a curly loop and doughnut (torus) as above.)
 
 ## **HW1** :round_pushpin: ##
 **Implement and compare clustering algorithms:**
