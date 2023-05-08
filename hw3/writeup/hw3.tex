@@ -235,4 +235,25 @@ Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Rec
         \end{align*}
     \end{proof}
 
+\section{Intrinsic Dimensionality Estimation}
+
+    \begin{figure}[h]
+        \label{fig:ps1_clustering_original} 
+        \includegraphics[width=\linewidth]{images/q6/gaussian.png}
+    \end{figure}
+
+    \pagebreak
+
+\section{Numerical Exploration of Johnson-Lindenstrauss Lemma}
+
+    Recall the Johnson-Lindenstrauss Lemma:
+
+    \textbf{Lemma:} For $0<\epsilon<1$, set $X= \{ x_1 \ldots x_m \}$ with $x_i \in \mathbb{R}^N$, and $ n > 8 \ln(m)/ \epsilon^2$ there exists a linear map $f: \mathbb{R}^N \rightarrow \mathbb{R}^n$ such that:
+
+    \begin{align*}
+        (1 - \epsilon) ||u - v||^2 \leq ||f(u) - f(v)||^2 \leq (1 + \epsilon) ||u - v||^2
+    \end{align*}
+
+    for all $u,v \in X$.
+
 \end{document}

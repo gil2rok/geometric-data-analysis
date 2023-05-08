@@ -1,8 +1,8 @@
-PWD /Users/gil2rok/school/geometric-data-analysis/hw3/writeup
+PWD /Users/gil2rok/school/gda/hw3/writeup
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/gil2rok/school/geometric-data-analysis/hw3/writeup/hw3.tex
+INPUT /Users/gil2rok/school/gda/hw3/writeup/hw3.tex
 OUTPUT hw3.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -631,6 +631,11 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT ./images/q6/gaussian.png
+INPUT ./images/q6/gaussian.png
+INPUT images/q6/gaussian.png
+INPUT ./images/q6/gaussian.png
+INPUT ./images/q6/gaussian.png
 INPUT hw3.aux
 INPUT ./hw3.out
 INPUT ./hw3.out
@@ -649,3 +654,4 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
