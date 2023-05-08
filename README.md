@@ -29,7 +29,7 @@
 - [Paper summarizing manifold learning algorithms](https://www.cs.columbia.edu/~verma/classes/ml/ref/lec8_cayton_manifolds.pdf)
 
 ## **HW3** :round_pushpin: ##
-**Prove multiple properties of tree metrics $d_T$, Hausdorff metrics $d_H$ and Gromov-Hausdorff metrics $d_{GH}$:**
+**Prove properties of the tree metric $d_T$, Hausdorff metric $d_H$, and Gromov-Hausdorff metric $d_{GH}$:**
 
 - Metric tree spaces $\mathcal{T}$ have nonpositive curvature
 - The Hausdorff $d_H$ and Gromov-Hausdorff metrics $d_{GH}$ are formal metrics
