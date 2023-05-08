@@ -1,6 +1,6 @@
 # Geometric Data Analysis :curly_loop: :doughnut:
 
-The work of Gilad Turok for [COMS 4995] Geometric Data Analysis with Professor Andrew Blumberg in Spring of 2023 at Columbia University :pencil2: :triangular_ruler: :bar_chart:
+**The work of Gilad Turok for [COMS 4995] Geometric Data Analysis with Professor Andrew Blumberg in Spring of 2023 at Columbia University :pencil2: :triangular_ruler: :bar_chart:**
 
 (Unfortunately, there are no good emojis for topology or manifolds. Until this crime is remedied, I will be using a curly loop and doughnuts (torus) as above.)
 
