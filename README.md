@@ -2,14 +2,14 @@
 
 **The work of Gilad Turok for [COMS 4995] Geometric Data Analysis with Professor Andrew Blumberg in Spring of 2023 at Columbia University :pencil2: :triangular_ruler: :bar_chart:.**
 
-(Unfortunately, there are no good emojis for topology or manifolds. Until this crime is remedied, I will be using a doughnut (torus) as above.)
+(Unfortunately, there are no good emojis for topology or manifolds. Until this crime is remedied, I will be using a doughnut as a torus.)
 
 ## **HW1** :round_pushpin: ##
 **Implement and compare clustering algorithms:**
 - $k$-means
 - $k$-medians
-- single-linkage clustering
-- spectral clustering with graphs constructed by $k$ nearest-neighbors and the Gaussian/RBF kernel.
+- Single-linkage clustering
+- Spectral clustering with graphs constructed by $k$ nearest-neighbors and the Gaussian/RBF kernel.
 
 ## **HW2** :round_pushpin: ##
 **Implement and compare manifold dimensionality reduction algorithms:**
@@ -19,14 +19,14 @@
 - Laplacian Eigenmaps
 
 **Prove multiple properties of manifolds:**
-- enumerate a space that is not a manifold
-- show that for any point $m \in \mathcal{M}$ on a manifold, a chart $\theta$ can be constructed such that $\theta(m)=0$
-- explicate coordinate patches and transition functions for the circle using charts defined by the angle and projections to the axes
-- prove that solving the MDS matrix factorization problem $A=U \Lambda U^T$ for $m << n$ points approximates the true solution.
+- Enumerate a space that is not a manifold
+- Show that for any point $m \in \mathcal{M}$ on a manifold, a chart $\theta$ can be constructed such that $\theta(m)=0$
+- Explicate coordinate patches and transition functions for the circle using charts defined by the angle and projections to the axes
+- Prove that solving the MDS matrix factorization problem $A=U \Lambda U^T$ for $m << n$ points approximates the true solution.
 
 **Helpful Resources:**
 - [Github tutorial on manifold learning](https://github.com/drewwilimitis/Manifold-Learning)
-- [paper summarizing manifold learning algorithms](https://www.cs.columbia.edu/~verma/classes/ml/ref/lec8_cayton_manifolds.pdf).
+- [Paper summarizing manifold learning algorithms](https://www.cs.columbia.edu/~verma/classes/ml/ref/lec8_cayton_manifolds.pdf).
 
 ## **HW3:** :round_pushpin: ##
 **Prove multiple properties of tree metrics $d_T$, Hausdorff metrics $d_H$ and Gromov-Hausdorff metrics $d_{GH}$:**
