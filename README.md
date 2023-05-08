@@ -2,14 +2,14 @@
 
 The work of Gilad Turok for [COMS 4995] Geometric Data Analysis with Professor Andrew Blumberg in Spring of 2023 at Columbia University :pencil2: :triangular_ruler: :bar_chart:
 
-### **HW1** :round_pushpin: ###
+## **HW1** :round_pushpin: ##
 **Implement and compare clustering algorithms:**
 - $k$-means
 - $k$-medians
 - single-linkage clustering
 - spectral clustering with graphs constructed by $k$ nearest-neighbors and the Gaussian/RBF kernel.
 
-### **HW2** :round_pushpin: ###
+## **HW2** :round_pushpin: ##
 **Implement and compare manifold dimensionality reduction algorithms:**
 - IsoMap
 - Multi-Dimensional Scaling
@@ -26,7 +26,7 @@ The work of Gilad Turok for [COMS 4995] Geometric Data Analysis with Professor A
 - [Github tutorial on manifold learning](https://github.com/drewwilimitis/Manifold-Learning)
 - [paper summarizing manifold learning algorithms](https://www.cs.columbia.edu/~verma/classes/ml/ref/lec8_cayton_manifolds.pdf).
 
-### **HW3:** :round_pushpin: ###
+## **HW3:** :round_pushpin: ##
 **Prove multiple properties of tree metrics $d_T$, Hausdorff metrics $d_H$ and Gromov-Hausdorff metrics $d_{GH}$:**
 
 - Metric tree spaces $\mathcal{T}$ have nonpositive curvature
