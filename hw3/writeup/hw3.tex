@@ -237,12 +237,23 @@ Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Rec
 
 \section{Intrinsic Dimensionality Estimation}
 
+    I estimate the intrinsic dimensionality of a multidimensional Gaussian and hypercube from estimating the tangent plane. I do this by examining the nearest neighbors of a pt and computing its rank -- this is an appoximation of the intrinsic dimension. I then take the average of the intrinsic dimension of all points in the dataset.
+    
+    I use $n=5000$ data points and an ambient dimension of $D = 50$. I use $k=2*\textit{ambient-dim}$ nearest neighbors. I then use intrinsic dimensions of $d = \{2, 4, 8, 16, 32 \}$ and estimate it with my method. The results are plotted below, with the figures demonstrating the accuracy of my method.
+
     \begin{figure}[h]
-        \label{fig:ps1_clustering_original} 
+        \label{fig:gaussian_intrinsic_dim} 
         \includegraphics[width=\linewidth]{images/q6/gaussian.png}
+        \caption{Intrinsic Dimension Estimation for Gaussian}
     \end{figure}
 
-    \pagebreak
+    \begin{figure}[h]
+        \label{fig:hypercube_intrinsic_dim} 
+        \includegraphics[width=\linewidth]{images/q6/hypercube.png}
+        \caption{Intrinsic Dimension Estimation for Hypercube}
+    \end{figure}
+
+    \clearpage
 
 \section{Numerical Exploration of Johnson-Lindenstrauss Lemma}
 

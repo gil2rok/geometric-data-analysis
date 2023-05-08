@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  8 MAY 2023 00:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  8 MAY 2023 11:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -350,36 +350,45 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 220.
 
-<images/q6/gaussian.png, id=79, 702.625pt x 501.875pt>
+[6]
+<images/q6/gaussian.png, id=85, 702.625pt x 501.875pt>
 File: images/q6/gaussian.png Graphic file (type png)
 <use images/q6/gaussian.png>
-Package pdftex.def Info: images/q6/gaussian.png  used on input line 242.
+Package pdftex.def Info: images/q6/gaussian.png  used on input line 246.
 (pdftex.def)             Requested size: 345.0pt x 246.43398pt.
+<images/q6/hypercube.png, id=87, 702.625pt x 501.875pt>
+File: images/q6/hypercube.png Graphic file (type png)
+<use images/q6/hypercube.png>
+Package pdftex.def Info: images/q6/hypercube.png  used on input line 252.
+(pdftex.def)             Requested size: 345.0pt x 246.43398pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
-Overfull \hbox (20.51799pt too wide) in paragraph at lines 247--247
+[7 <./images/q6/gaussian.png>] [8 <./images/q6/hypercube.png>]
+Overfull \hbox (20.51799pt too wide) in paragraph at lines 258--258
 []\OT1/cmr/bx/n/14.4 Numerical Ex-plo-ration of Johnson-Lindenstrauss
  []
 
-[7 <./images/q6/gaussian.png>] (./hw3.aux)
+[9
+
+] (./hw3.aux)
 Package rerunfilecheck Info: File `hw3.out' has not changed.
 (rerunfilecheck)             Checksum: DA88A0EE031125FF305DE4D83E0C62F9;1825.
  ) 
 Here is how much of TeX's memory you used:
- 10231 strings out of 475075
- 161198 string characters out of 5779003
- 512384 words of memory out of 5000000
- 31470 multiletter control sequences out of 15000+600000
- 478715 words of font info for 65 fonts, out of 8000000 for 9000
+ 10247 strings out of 475075
+ 161480 string characters out of 5779003
+ 512441 words of memory out of 5000000
+ 31480 multiletter control sequences out of 15000+600000
+ 479413 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,15n,77p,452b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw3.pdf (7 pages, 206987 bytes).
+Output written on hw3.pdf (9 pages, 232684 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 
