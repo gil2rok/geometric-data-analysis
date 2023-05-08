@@ -28,7 +28,7 @@
 - [Github tutorial on manifold learning](https://github.com/drewwilimitis/Manifold-Learning)
 - [Paper summarizing manifold learning algorithms](https://www.cs.columbia.edu/~verma/classes/ml/ref/lec8_cayton_manifolds.pdf)
 
-## **HW3:** :round_pushpin: ##
+## **HW3** :round_pushpin: ##
 **Prove multiple properties of tree metrics $d_T$, Hausdorff metrics $d_H$ and Gromov-Hausdorff metrics $d_{GH}$:**
 
 - Metric tree spaces $\mathcal{T}$ have nonpositive curvature
