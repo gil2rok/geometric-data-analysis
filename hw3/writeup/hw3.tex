@@ -271,7 +271,9 @@ Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Rec
 
     To test this out numerically, I simulated the original data $X$, a projection matrix $A$, and then actually projected the data to $AX$.
     
-    By the JL Lemma, we expect the distortion of distances to be bounded. Thus, for every pair of points $u, v \in X$, I computed the lower bound $(1-\epsilon) ||u - v||^2$, the upper bound $(1 + \epsilon) ||u-v||^2$, and the true distortion $||Au - Av||^2$. I numerically confirmed that the true distortion is between the upper and lower bounds for all pairs of points $u,v \in X$. I then plotted these distortion values to visually demonstrate this result: on the vertical axis, the embedding distortion (in black) falls between the upper and lower distortion bounds (in blue).
+    By the JL Lemma, we expect the distortion of distances to be bounded. Thus, for every pair of points $u, v \in X$, I computed the lower bound $(1-\epsilon) ||u - v||^2$, the upper bound $(1 + \epsilon) ||u-v||^2$, and the true distortion $||Au - Av||^2$. I numerically confirmed that the true distortion is between the upper and lower bounds for all pairs of points $u,v \in X$ for multiple dimensions.
+    
+    I then plotted these distortion values for a given dimension to visually demonstrate this result: on the vertical axis, the embedding distortion (in black) falls between the upper and lower distortion bounds (in blue).
 
     \begin{figure}[h]
         \label{fig:jl_distortion} 
@@ -280,5 +282,40 @@ Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Rec
     \end{figure}
 
     \clearpage
+
+\section{Centroid in Wasserstein Space}
+
+    Code can be found in \texttt{q7.py}.
+
+    \subsection{MNIST}
+
+        Finding the centroid in Wasserstein space for each digit in the MNIST dataset.
+
+        \begin{figure}[htb]
+            \centering
+            \begin{tabular}{@{}cccc@{}}
+                \includegraphics[width=.24\textwidth]{images/q7/digit_0.png} &
+                \includegraphics[width=.24\textwidth]{images/q7/digit_1.png} &
+                \includegraphics[width=.24\textwidth]{images/q7/digit_2.png} &
+                \includegraphics[width=.24\textwidth]{images/q7/digit_3.png}   \\
+                \includegraphics[width=.24\textwidth]{images/q7/digit_4.png} &
+                \includegraphics[width=.24\textwidth]{images/q7/digit_5.png} &
+                \includegraphics[width=.24\textwidth]{images/q7/digit_6.png} &
+                \includegraphics[width=.24\textwidth]{images/q7/digit_7.png}   \\
+                \includegraphics[width=.24\textwidth]{images/q7/digit_8.png} &
+                \includegraphics[width=.24\textwidth]{images/q7/digit_9.png} \\
+            \end{tabular}
+            \caption{Centroids in Wasserstein Space for MNIST Digits}
+        \end{figure}
+
+    \subsection{Gaussians}
+        
+        Finding the centroid in Wasserstein space for a few Gaussians.
+
+        \begin{figure}[h]
+            \includegraphics[width=\linewidth]{images/q7/gaussian.png}
+            \caption{Centroid in Wasserstein Space for Gaussians}
+        \end{figure}
+        
 
 \end{document}

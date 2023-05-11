@@ -2,7 +2,7 @@
 
 **The work of Gilad Turok for [COMS 4995] Geometric Data Analysis with Professor [Andrew Blumberg](https://ajblumberg.github.io/) in Spring of 2023 at Columbia University :pencil2: :triangular_ruler: :bar_chart:.**
 
-(Unfortunately, there are no good emojis for topology or manifolds. Until this crime is remedied, I will be using a doughnut as a torus.)
+:rotating_light: Unfortunately, there are no good emojis for topology or manifolds. Until this crime is remedied, I will be using a doughnut as a torus.
 
 ## **HW1** :round_pushpin: ##
 **Implement and compare clustering algorithms:**
@@ -41,3 +41,6 @@
 - Emperically prove the **Johnson-Lindenstrauss Lemma** with numerical experiments
 - Find the **centroid in Wasserstein space** to "average" distrubutions in $\mathbb{R}^2$ of MNIST digits
 - Use an **approximation of the Gromov-Hausdorff metric $d_{GH}$ to cluster** tooth and bone datasets from [here](https://drive.google.com/file/d/1S9oJlcxHhRGqEt5xgQGVXjcha2qAJp9r/view)
+
+**Helpful Resources:**
+- [Numerical experiments with the Johnson-Lindenstrauss Lemma](https://www.johnmyleswhite.com/notebook/2014/03/24/a-note-on-the-johnson-lindenstrauss-lemma/)
