@@ -237,7 +237,7 @@ Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Rec
 
 \section{Intrinsic Dimensionality Estimation}
 
-    I estimate the intrinsic dimensionality of a multidimensional Gaussian and hypercube from estimating the tangent plane. I do this by examining the nearest neighbors of a pt and computing its rank -- this is an appoximation of the intrinsic dimension. I then take the average of the intrinsic dimension of all points in the dataset.
+    I estimate the intrinsic dimensionality of a multidimensional Gaussian and hypercube from estimating the tangent plane. I do this by examining the nearest neighbors of a point and computing its rank -- this is an appoximation of the intrinsic dimension. I then take the average of the intrinsic dimension of all points in the dataset.
     
     I use $n=5000$ data points and an ambient dimension of $D = 50$. I use $k=2*\textit{ambient-dim}$ nearest neighbors. I then use intrinsic dimensions of $d = \{2, 4, 8, 16, 32 \}$ and estimate it with my method. The results are plotted below, with the figures demonstrating the accuracy of my method.
 
@@ -266,5 +266,15 @@ Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Rec
     \end{align*}
 
     for all $u,v \in X$.
+
+\section{Numerical Exploration of Johnson-Lindenstrauss Lemma}
+
+    Recall the probabilistic statement of the Johnson-Lindenstrauss Lemma:
+
+    \textbf{Lemma:} Let $X=\{x_1 \ldots x_n\}$ containing $n$ unit-length data points in  $\mathbb{R}^D$. Then, for any $\epsilon > 0, \delta < 1/2$, let $d = \mathcal{O}(\epsilon^{-2}\log(1/\delta))$. We can then define a projection matrix $A \in \mathbb{R}^{d \times D}$ that points from $\mathbb{R}^D$ to $\mathbb{R}^d$ with $A_{ij} \sim \mathcal{N}(0, 1/d)$ such that
+
+    \begin{equation*}
+        P\left( \Big| ||Ax||_2^2 - 1 \Big| > \epsilon \right) < \delta
+    \end{equation*}
 
 \end{document}
