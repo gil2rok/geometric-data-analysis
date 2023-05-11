@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1683820768 "/Users/gil2rok/school/gda/hw3/writeup/hw3.tex" "hw3.pdf" "hw3" 1683820769
-  "/Users/gil2rok/school/gda/hw3/writeup/hw3.tex" 1683820768 14802 c2b1408b3d465e023b2ec0cc4cf68000 ""
+["pdflatex"] 1683832502 "/Users/gil2rok/school/gda/hw3/writeup/hw3.tex" "hw3.pdf" "hw3" 1683832503
+  "/Users/gil2rok/school/gda/hw3/writeup/hw3.tex" 1683832502 15268 3cc0c7dae99fcd6de515eab81cbf1fb3 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -103,11 +103,12 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1663207547 4595816 106c4e272f709332e200b7ab82c17944 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663207570 3059211 5ab6d6acc80cf4984c72eced45b8d200 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "hw3.aux" 1683820769 2289 e3c07e110805e4013318b13eb362268f "pdflatex"
-  "hw3.out" 1683820769 2140 85e353a630be968b05edbc9fd0fef4d1 "pdflatex"
-  "hw3.tex" 1683820768 14802 c2b1408b3d465e023b2ec0cc4cf68000 ""
-  "images/q6/gaussian.png" 1683558064 38593 4cfce2bf0213c5d0f13b769b1a45141c ""
-  "images/q6/hypercube.png" 1683558476 38593 4cfce2bf0213c5d0f13b769b1a45141c ""
+  "hw3.aux" 1683832503 2394 ec63adf6acec6927b0f33d509764e436 "pdflatex"
+  "hw3.out" 1683832503 1825 da88a0ee031125ff305de4d83e0c62f9 "pdflatex"
+  "hw3.tex" 1683832502 15268 3cc0c7dae99fcd6de515eab81cbf1fb3 ""
+  "images/q5/gaussian.png" 1683558064 38593 4cfce2bf0213c5d0f13b769b1a45141c ""
+  "images/q5/hypercube.png" 1683558476 38593 4cfce2bf0213c5d0f13b769b1a45141c ""
+  "images/q6/distortion.png" 1683832347 51816 044ac4f15426c07f1df78b0291d36422 ""
   (generated)
   "hw3.aux"
   "hw3.log"

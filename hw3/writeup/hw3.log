@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  11 MAY 2023 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  11 MAY 2023 15:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -351,49 +351,57 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 220.
 
 [6]
-<images/q6/gaussian.png, id=89, 702.625pt x 501.875pt>
-File: images/q6/gaussian.png Graphic file (type png)
-<use images/q6/gaussian.png>
-Package pdftex.def Info: images/q6/gaussian.png  used on input line 246.
+<images/q5/gaussian.png, id=85, 702.625pt x 501.875pt>
+File: images/q5/gaussian.png Graphic file (type png)
+<use images/q5/gaussian.png>
+Package pdftex.def Info: images/q5/gaussian.png  used on input line 246.
 (pdftex.def)             Requested size: 345.0pt x 246.43398pt.
-<images/q6/hypercube.png, id=91, 702.625pt x 501.875pt>
-File: images/q6/hypercube.png Graphic file (type png)
-<use images/q6/hypercube.png>
-Package pdftex.def Info: images/q6/hypercube.png  used on input line 252.
+<images/q5/hypercube.png, id=87, 702.625pt x 501.875pt>
+File: images/q5/hypercube.png Graphic file (type png)
+<use images/q5/hypercube.png>
+Package pdftex.def Info: images/q5/hypercube.png  used on input line 252.
 (pdftex.def)             Requested size: 345.0pt x 246.43398pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./images/q6/gaussian.png>] [8 <./images/q6/hypercube.png>]
+[7 <./images/q5/gaussian.png>] [8 <./images/q5/hypercube.png>]
 Overfull \hbox (20.51799pt too wide) in paragraph at lines 258--258
 []\OT1/cmr/bx/n/14.4 Numerical Ex-plo-ration of Johnson-Lindenstrauss
  []
 
+<images/q6/distortion.png, id=101, 782.925pt x 451.6875pt>
+File: images/q6/distortion.png Graphic file (type png)
+<use images/q6/distortion.png>
+Package pdftex.def Info: images/q6/distortion.png  used on input line 278.
+(pdftex.def)             Requested size: 448.50105pt x 258.75337pt.
 
-Overfull \hbox (20.51799pt too wide) in paragraph at lines 270--270
-[]\OT1/cmr/bx/n/14.4 Numerical Ex-plo-ration of Johnson-Lindenstrauss
+Overfull \hbox (103.50105pt too wide) in paragraph at lines 278--279
+[][] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9
 
-] (./hw3.aux)
+] [10 <./images/q6/distortion.png>] (./hw3.aux)
 Package rerunfilecheck Info: File `hw3.out' has not changed.
-(rerunfilecheck)             Checksum: 85E353A630BE968B05EDBC9FD0FEF4D1;2140.
+(rerunfilecheck)             Checksum: DA88A0EE031125FF305DE4D83E0C62F9;1825.
  ) 
 Here is how much of TeX's memory you used:
- 10249 strings out of 475075
- 161500 string characters out of 5779003
- 512441 words of memory out of 5000000
- 31481 multiletter control sequences out of 15000+600000
+ 10258 strings out of 475075
+ 161713 string characters out of 5779003
+ 512519 words of memory out of 5000000
+ 31487 multiletter control sequences out of 15000+600000
  479413 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,15n,77p,452b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,15n,77p,646b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw3.pdf (9 pages, 235675 bytes).
+Output written on hw3.pdf (10 pages, 263049 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
+ 189 PDF objects out of 1000 (max. 8388607)
  137 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 30 named destinations out of 1000 (max. 500000)
+ 80 words of extra memory for PDF output out of 10000 (max. 10000000)
 
