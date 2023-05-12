@@ -56,7 +56,7 @@
 
 
 \begin{abstract}
-  Blah blah blah  Blah blah blah  Blah blah blah  Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah bl
+  Tracking the fate of single cells is immensely important in contemporary biology. With the advent of CRISPR-Cas9 genome editing and high-throughout single-cell sequencing, this is now a reality. In this paper, we present HERACLES, a novel phylogeny-reconstruction algorithm to reconstruct the cell lineage of CRISPR-Cas9  experiments. HERACLES finding hyperbolic embeddings that accurately represent the phylogenetic tree of interest while addressing the unique challenges of CRISPR-based lineage tracking. We provide early simulation experiments that demonstrate the efficacy of HERACLES, surpassing the current state of the art algorithms.
 \end{abstract}
 
 
@@ -73,7 +73,7 @@ The ability to track individual cells throughout biological processes has signif
   \caption{From a character matrix, HERACLES seeks to reconstruct the original cell-lineage as a phylogenetic tree.}
 \end{figure}
 
-Many phylogeny-reconstrution algorithms, however, are not well-suited for cell-lineage data because of its (1) scale, (2) sequencing challenges, and (3) unique evolutionary model. As such, traditional algorithms -- such as Neighbor Joining \cite{saitou1987neighbor}, Weighbor \cite{bruno2000}, and Camin-Sokal \cite{camin1965method} -- may not perform well in this domain. These algorithms are suited for a few samples, not tens of thousands of cells. This largely makes them computationally intractable for cell-lineage data. Furthermore, these algorithms are unable to handle the vast amounts of missing data that occur in single-cell lineage tracing: missing data may be \emph{heritable} -- from large-scale CRISPR-induced deletions -- or \emph{stochastic} -- from incomplete capture of target sites during sequencing. Finally, these algorithms do not take into account the design of lineage tracers and the evolutionary stochastic models they induce. Unlike cannonical evolutionary models, lineage tracing experiments are time-irreversible such that once an edit is made, reversions to an unedited start or a different mutation are impossible.  Furthermore, in this setting the ancestral state, or root of the lineage tree, is known to be the unedited state; this information can be used to inform the construction of the phylogenetic tree. Thirdly, lineage tracing systems contain site-specific mutation rates that enable capturing evolutionary relationships at varying time-scales.
+Many phylogeny-reconstrution algorithms, however, are not well-suited for cell-lineage data because of its (1) scale, (2) sequencing challenges, and (3) unique evolutionary model. As such, traditional algorithms -- such as Neighbor Joining \cite{saitou1987neighbor}, Weighbor \cite{bruno2000}, and Camin-Sokal \cite{camin1965method} -- may not perform well in this domain. These algorithms are suited for a few samples, not tens of thousands of cells. This largely makes them computationally intractable for cell-lineage data. Furthermore, these algorithms are unable to handle the vast amounts of missing data that occur in single-cell-lineage tracing: missing data may be \emph{heritable} -- from large-scale CRISPR-induced deletions -- or \emph{stochastic} -- from incomplete capture of target sites during sequencing. Finally, these algorithms do not take into account the design of lineage tracers and the evolutionary stochastic models they induce. Unlike cannonical evolutionary models, lineage tracing experiments are time-irreversible such that once an edit is made, reversions to an unedited start or a different mutation are impossible.  Furthermore, in this setting the ancestral state, or root of the lineage tree, is known to be the unedited state; this information can be used to inform the construction of the phylogenetic tree. Thirdly, lineage tracing systems contain site-specific mutation rates that enable capturing evolutionary relationships at varying time-scales.
 
 We aim to tackle these challenges by developing a novel phylogeny-reconstruction algorithm HERACLES: Hyperbolic Embeddings for Reconstruction and Analysis of CRISPR-Cas9 LineagES. HERACLES explicitly considers (1) different mutation rates at each target site, (2) non-uniform distributions over indels at each target site, and (3) time-irreversible evolutionary model of lineage tracing experiments. HERACLES broadly works by finding hyperbolic embeddings that accurately represent the phylogenetic tree of interest. First we identify the continous time Markov-chain that underlies the evolutionary process of the lineage tracing experiment. In this context, we construct a log-likelihood function that quantifies the fidelity of a candidate phylogenetic tree. Next, we embed the character matrix into hyperbolic space and use gradient-based optimization to find the embedding that maximizes the log-likelihood function. Finally, we reconstruct the phylogenetic tree from these hyperbolic embeddings. We provide early simulation experiments that demonstrate the efficacy of HERACLES.
 
@@ -83,7 +83,7 @@ We aim to tackle these challenges by developing a novel phylogeny-reconstruction
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Previous work has been carried out in \cite{wilson2021learning} that reconstructs phylogentic trees with hyperbolic embeddings for homologous sequence data, generated under the Jukes-Cantor evolutionary model. They find that using hyperbolic embeddings outperforms many traditional phylogeny-reconstruction algorithms in a variety of simulated settings. This paper (similarly) reconstructs phylogenetic trees with hyperbolic embeddings but does so for the evolutionary model of CRISPR-Cas9 lineage tracing. Furthermore, \cite{jones2020inference} is the only work that directly tackles lineage tracing for CRISPR-Cas9. They propose three approaches: greedily optimizing for parsimony, finding a Steiner Tree with integer linear programming, and a hybrid approach that combines the two. HERACLES can be viewed as a combination of these two works, learning hyperbolic embeddings for CRISPR-Cas9 lineage tracing experiments.
+Previous work has been carried out in \cite{wilson2021learning} that reconstructs phylogentic trees with hyperbolic embeddings for homologous sequence data, generated under the Jukes-Cantor evolutionary model. They find that using hyperbolic embeddings outperforms many traditional phylogeny-reconstruction algorithms in a variety of simulated settings. This paper (similarly) reconstructs phylogenetic trees with hyperbolic embeddings but does so for the evolutionary model of CRISPR-Cas9 lineage tracing. Furthermore, \cite{jones2020inference} is the only work that directly tackles lineage tracing for CRISPR-Cas9. They propose three approaches: greedily optimizing for parsimony, finding a Steiner Tree with Integer Linear Programming (ILP), and a hybrid approach that combines the two. HERACLES can be viewed as a combination of these two works, learning hyperbolic embeddings for CRISPR-Cas9 lineage tracing experiments.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -169,20 +169,47 @@ Note that we set $t=d(x_i, x_j)$ such that instead of $\sigma_i$ and $\sigma_j$ 
 
 After computing the log-likelihood, we update the embedding $x_i$ of cell $i$ with the Riemannian Adam optimizer \cite{becigneul2018riemannian}. Riemannian Adam is a modified Adam optimizer \cite{kingma2014adam} that ensures the update remains on the manifold of hyperbolic space. After iterating through all $N$ cells, we get an updated embedding $X$. This process is repeated until some convergence criteria is met.
 
-\paragraph*{Recovering the Phylogenetic Tree} Once the hyperbolic embeddings $X$ have converged, we compute a pairwise distance matrix $D^\prime$ with the geodesic distance between each pair of cells. We then use a tree reconstruction algorithm -- such as Neighbor Joining -- to construct a phylogenetic tree $T^\prime$. The reconstructed tree of cell lineages, $T^\prime$, is the final output of the HERACLES algorithm.
+\paragraph*{Recovering the Phylogenetic Tree} Once the hyperbolic embeddings $X$ have converged, we compute a pairwise distance matrix $D^\prime$ with the geodesic distance between each pair of cells. We then use a tree reconstruction algorithm -- such as Neighbor Joining -- to construct a phylogenetic tree $T^\prime$. The reconstructed tree of cell-lineages, $T^\prime$, is the final output of the HERACLES algorithm.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Experiments and Results}
+\section{Experiments and Discussion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-gg
+To test HERACLES, we simulated a ground truth phylogeny with a birth death process and then overlayed casettes on top of this tree topology. We can then compare the true tree to an estimated tree with the triplets correct metric \cite{sand2013practical} -- the higher the better. In these experiments, we investigate the performance of HERACLES, the Cassiopeia greedy algorithm and the Cassiopeia ILP algorithm.
+
+In small simulations of $N=20$ cells, HERACLES' learns good hyperbolic embeddings: the log-likelihood and triplets correct metric both increase. Furthermore, HERACLES outperforms both state-of-the-art Cassiopeia algorithms.
+
+In larger simulations of $N=1000$ cells, HERACLES again outperforms both state-of-the-art Cassiopeia algorithms. However, in this setting, HERACLES is unable to improve the initial hyperbolic embeddings as the log-likelihood and triplets correct metric fluctuate stochastically but do not increase. This suggests that the initial embedding scheme into hyperbolic space works well but the gradient updates from RiemannianAdam do not.
+
+
+\begin{table}[t]
+  \label{tab:results}
+  \begin{center}
+    \begin{tabular}{||c c c c||} 
+      \hline
+        \\  & HERACLES &  Cassiopeia ILP & Cassiopeia Greedy  \\ 
+      \hline\hline
+      $20$ cells & \textbf{0.465}  & 0.457 & 0.310 \\ 
+      \hline
+      $1000$ cells & \textbf{0.260} & 0.049 & 0.10 \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Results of HERACLES, Cassiopeia ILP and Cassiopeia Greedy on simulated data.}
+\end{table}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+In this paper we explored reconstructing cell-lineages of CRISP-Cas9 experiments. We introduced HERACLES, a novel algorithm that embeds a character matrix into hyperbolic space, improves the hyperbolic embeddings with RiemannianAdam, and then reconstructs the original phylogenetic tree. We showed that HERACLES outperforms state-of-the-art Cassiopeia algorithms on simulated data.
+
+In future work, we plan to investigate HERACLES' performance in a much wider variety of simulated settings to ensure robust performance. We also plan to explore alternative embedding schemes for the initial embedding into hyperbolic space. Furthermore, we plan to extensively explore why HERACLES fails to improve the hyperbolic embeddings in larger simulations. Finally, we plan to apply HERACLES to real CRISP-Cas9 data.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliography{references}

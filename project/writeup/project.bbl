@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -105,5 +105,13 @@ Gary B{\'e}cigneul and Octavian-Eugen Ganea.
 Diederik~P Kingma and Jimmy Ba.
 \newblock Adam: A method for stochastic optimization.
 \newblock \emph{arXiv preprint arXiv:1412.6980}, 2014.
+
+\bibitem[Sand et~al.(2013)Sand, Brodal, Fagerberg, Pedersen, and
+  Mailund]{sand2013practical}
+Andreas Sand, Gerth~St{\o}lting Brodal, Rolf Fagerberg, Christian~NS Pedersen,
+  and Thomas Mailund.
+\newblock A practical o (n log 2 n) time algorithm for computing the triplet
+  distance on binary trees.
+\newblock In \emph{BMC bioinformatics}, volume~14, pages 1--9. Springer, 2013.
 
 \end{thebibliography}
