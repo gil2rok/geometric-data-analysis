@@ -1,8 +1,109 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[McKenna et~al.(2016)McKenna, Findlay, Gagnon, Horwitz, Schier, and
+  Shendure]{McKenna2016}
+Aaron McKenna, Gregory~M. Findlay, James~A. Gagnon, Marshall~S. Horwitz,
+  Alexander~F. Schier, and Jay Shendure.
+\newblock Whole-organism lineage tracing by combinatorial and cumulative genome
+  editing.
+\newblock \emph{Science}, 353\penalty0 (6298), July 2016.
+\newblock \doi{10.1126/science.aaf7907}.
+\newblock URL \url{https://doi.org/10.1126/science.aaf7907}.
+
+\bibitem[Raj et~al.(2018)Raj, Wagner, McKenna, Pandey, Klein, Shendure, Gagnon,
+  and Schier]{Raj2018}
+Bushra Raj, Daniel~E Wagner, Aaron McKenna, Shristi Pandey, Allon~M Klein, Jay
+  Shendure, James~A Gagnon, and Alexander~F Schier.
+\newblock Simultaneous single-cell profiling of lineages and cell types in the
+  vertebrate brain.
+\newblock \emph{Nature Biotechnology}, 36\penalty0 (5):\penalty0 442--450,
+  March 2018.
+\newblock \doi{10.1038/nbt.4103}.
+\newblock URL \url{https://doi.org/10.1038/nbt.4103}.
+
+\bibitem[Kalhor et~al.(2018)Kalhor, Kalhor, Mejia, Leeper, Graveline, Mali, and
+  Church]{Kalhor2018}
+Reza Kalhor, Kian Kalhor, Leo Mejia, Kathleen Leeper, Amanda Graveline,
+  Prashant Mali, and George~M. Church.
+\newblock Developmental barcoding of whole mouse via homing crispr.
+\newblock \emph{Science}, 361\penalty0 (6405):\penalty0 eaat9804, 2018.
+\newblock \doi{10.1126/science.aat9804}.
+\newblock URL \url{https://www.science.org/doi/abs/10.1126/science.aat9804}.
+
+\bibitem[Chan et~al.(2019)Chan, Smith, Grosswendt, Kretzmer, Norman, Adamson,
+  Jost, Quinn, Yang, Jones, et~al.]{chan2019}
+Michelle~M Chan, Zachary~D Smith, Stefanie Grosswendt, Helene Kretzmer,
+  Thomas~M Norman, Britt Adamson, Marco Jost, Jeffrey~J Quinn, Dian Yang,
+  Matthew~G Jones, et~al.
+\newblock Molecular recording of mammalian embryogenesis.
+\newblock \emph{Nature}, 570\penalty0 (7759):\penalty0 77--82, 2019.
+
+\bibitem[Saitou and Nei(1987)]{saitou1987neighbor}
+Naruya Saitou and Masatoshi Nei.
+\newblock The neighbor-joining method: a new method for reconstructing
+  phylogenetic trees.
+\newblock \emph{Molecular biology and evolution}, 4\penalty0 (4):\penalty0
+  406--425, 1987.
+
+\bibitem[Bruno et~al.(2000)Bruno, Socci, and Halpern]{bruno2000}
+William~J. Bruno, Nicholas~D. Socci, and Aaron~L. Halpern.
+\newblock {Weighted Neighbor Joining: A Likelihood-Based Approach to
+  Distance-Based Phylogeny Reconstruction}.
+\newblock \emph{Molecular Biology and Evolution}, 17\penalty0 (1):\penalty0
+  189--197, 01 2000.
+\newblock ISSN 0737-4038.
+\newblock \doi{10.1093/oxfordjournals.molbev.a026231}.
+\newblock URL \url{https://doi.org/10.1093/oxfordjournals.molbev.a026231}.
+
+\bibitem[Camin and Sokal(1965)]{camin1965method}
+Joseph~H Camin and Robert~R Sokal.
+\newblock A method for deducing branching sequences in phylogeny.
+\newblock \emph{Evolution}, pages 311--326, 1965.
+
+\bibitem[Wilson(2021)]{wilson2021learning}
+Benjamin Wilson.
+\newblock Learning phylogenetic trees as hyperbolic point configurations, 2021.
+
+\bibitem[Jones et~al.(2020)Jones, Khodaverdian, Quinn, Chan, Hussmann, Wang,
+  Xu, Weissman, and Yosef]{jones2020inference}
+Matthew~G Jones, Alex Khodaverdian, Jeffrey~J Quinn, Michelle~M Chan, Jeffrey~A
+  Hussmann, Robert Wang, Chenling Xu, Jonathan~S Weissman, and Nir Yosef.
+\newblock Inference of single-cell phylogenies from lineage tracing data using
+  cassiopeia.
+\newblock \emph{Genome biology}, 21\penalty0 (1):\penalty0 1--27, 2020.
+
+\bibitem[Felsenstein(1973)]{felsenstein1973maximum}
+Joseph Felsenstein.
+\newblock Maximum likelihood and minimum-steps methods for estimating
+  evolutionary trees from data on discrete characters.
+\newblock \emph{Systematic Biology}, 22\penalty0 (3):\penalty0 240--249, 1973.
+
+\bibitem[Sarkar(2012)]{sarkar2012low}
+Rik Sarkar.
+\newblock Low distortion delaunay embedding of trees in hyperbolic plane.
+\newblock In \emph{Graph Drawing: 19th International Symposium, GD 2011,
+  Eindhoven, The Netherlands, September 21-23, 2011, Revised Selected Papers
+  19}, pages 355--366. Springer, 2012.
+
+\bibitem[Sala et~al.(2018)Sala, De~Sa, Gu, and R{\'e}]{sala2018representation}
+Frederic Sala, Chris De~Sa, Albert Gu, and Christopher R{\'e}.
+\newblock Representation tradeoffs for hyperbolic embeddings.
+\newblock In \emph{International conference on machine learning}, pages
+  4460--4469. PMLR, 2018.
+
+\bibitem[B{\'e}cigneul and Ganea(2018)]{becigneul2018riemannian}
+Gary B{\'e}cigneul and Octavian-Eugen Ganea.
+\newblock Riemannian adaptive optimization methods.
+\newblock \emph{arXiv preprint arXiv:1810.00760}, 2018.
+
+\bibitem[Kingma and Ba(2014)]{kingma2014adam}
+Diederik~P Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock \emph{arXiv preprint arXiv:1412.6980}, 2014.
 
 \end{thebibliography}
