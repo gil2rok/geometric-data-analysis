@@ -285,7 +285,7 @@ Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Rec
 
 \section{Centroid in Wasserstein Space}
 
-    Code can be found in \texttt{q7.py}.
+    I found the centroid in Wasserstein space and plotted it for the MNIST dataset and a few univariate Gaussians. (I used the \href[]{https://pythonot.github.io/index.html}{Python Optimal Transport} library to do so.)
 
     \subsection{MNIST}
 
@@ -316,6 +316,18 @@ Want to show that Hausdorff and Gromov-Hausdorff metrics are indeed metrics. Rec
             \includegraphics[width=\linewidth]{images/q7/gaussian.png}
             \caption{Centroid in Wasserstein Space for Gaussians}
         \end{figure}
-        
+
+        \clearpage
+
+\section{Cluster Tooth and Bone Datasets With Gromov-Hausdorff Metric}
+
+    I clustered the tooth dataset. First, I read in the data, and subsampled the points for computational efficienty. Then, for each point, I constructed an adjaency matrix comprised of its $k$ nearest neighbors. Next, to compute a distance matrix, I used the approximate Gromov-Hausdorff metric between each pair of adjaency matricies. (Implementation of approximate Gromov-Hausdorff metric can be found \href{https://persim.scikit-tda.org/en/latest/index.html}{here}) Finally, I clustered the points using the distance matrix with spectral clustering. The results are shown below.
+
+    \begin{figure}[h]
+        \includegraphics[width=\linewidth]{images/q8/gromov_hausdorff_clusters.png}
+        \caption{Clusters for Tooth Dataset with Gromov-Hausdorff Metric}
+    \end{figure}
+
+    \clearpage
 
 \end{document}

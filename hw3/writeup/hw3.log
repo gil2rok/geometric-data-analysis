@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  11 MAY 2023 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  11 MAY 2023 21:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -351,12 +351,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 220.
 
 [6]
-<images/q5/gaussian.png, id=97, 702.625pt x 501.875pt>
+<images/q5/gaussian.png, id=101, 702.625pt x 501.875pt>
 File: images/q5/gaussian.png Graphic file (type png)
 <use images/q5/gaussian.png>
 Package pdftex.def Info: images/q5/gaussian.png  used on input line 246.
 (pdftex.def)             Requested size: 345.0pt x 246.43398pt.
-<images/q5/hypercube.png, id=99, 702.625pt x 501.875pt>
+<images/q5/hypercube.png, id=103, 702.625pt x 501.875pt>
 File: images/q5/hypercube.png Graphic file (type png)
 <use images/q5/hypercube.png>
 Package pdftex.def Info: images/q5/hypercube.png  used on input line 252.
@@ -370,7 +370,7 @@ Overfull \hbox (20.51799pt too wide) in paragraph at lines 258--258
 []\OT1/cmr/bx/n/14.4 Numerical Ex-plo-ration of Johnson-Lindenstrauss
  []
 
-<images/q6/distortion.png, id=113, 782.925pt x 451.6875pt>
+<images/q6/distortion.png, id=117, 782.925pt x 451.6875pt>
 File: images/q6/distortion.png Graphic file (type png)
 <use images/q6/distortion.png>
 Package pdftex.def Info: images/q6/distortion.png  used on input line 280.
@@ -386,52 +386,52 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [9
 
 ] [10 <./images/q6/distortion.png>]
-<images/q7/digit_0.png, id=125, 702.625pt x 501.875pt>
+<images/q7/digit_0.png, id=130, 702.625pt x 501.875pt>
 File: images/q7/digit_0.png Graphic file (type png)
 <use images/q7/digit_0.png>
 Package pdftex.def Info: images/q7/digit_0.png  used on input line 297.
 (pdftex.def)             Requested size: 82.8019pt x 59.14262pt.
-<images/q7/digit_1.png, id=126, 702.625pt x 501.875pt>
+<images/q7/digit_1.png, id=131, 702.625pt x 501.875pt>
 File: images/q7/digit_1.png Graphic file (type png)
 <use images/q7/digit_1.png>
 Package pdftex.def Info: images/q7/digit_1.png  used on input line 298.
 (pdftex.def)             Requested size: 82.8019pt x 59.14262pt.
-<images/q7/digit_2.png, id=127, 702.625pt x 501.875pt>
+<images/q7/digit_2.png, id=132, 702.625pt x 501.875pt>
 File: images/q7/digit_2.png Graphic file (type png)
 <use images/q7/digit_2.png>
 Package pdftex.def Info: images/q7/digit_2.png  used on input line 299.
 (pdftex.def)             Requested size: 82.8019pt x 59.14262pt.
-<images/q7/digit_3.png, id=128, 702.625pt x 501.875pt>
+<images/q7/digit_3.png, id=133, 702.625pt x 501.875pt>
 File: images/q7/digit_3.png Graphic file (type png)
 <use images/q7/digit_3.png>
 Package pdftex.def Info: images/q7/digit_3.png  used on input line 300.
 (pdftex.def)             Requested size: 82.8019pt x 59.14262pt.
-<images/q7/digit_4.png, id=129, 702.625pt x 501.875pt>
+<images/q7/digit_4.png, id=134, 702.625pt x 501.875pt>
 File: images/q7/digit_4.png Graphic file (type png)
 <use images/q7/digit_4.png>
 Package pdftex.def Info: images/q7/digit_4.png  used on input line 301.
 (pdftex.def)             Requested size: 82.8019pt x 59.14262pt.
-<images/q7/digit_5.png, id=130, 702.625pt x 501.875pt>
+<images/q7/digit_5.png, id=135, 702.625pt x 501.875pt>
 File: images/q7/digit_5.png Graphic file (type png)
 <use images/q7/digit_5.png>
 Package pdftex.def Info: images/q7/digit_5.png  used on input line 302.
 (pdftex.def)             Requested size: 82.8019pt x 59.14262pt.
-<images/q7/digit_6.png, id=131, 702.625pt x 501.875pt>
+<images/q7/digit_6.png, id=136, 702.625pt x 501.875pt>
 File: images/q7/digit_6.png Graphic file (type png)
 <use images/q7/digit_6.png>
 Package pdftex.def Info: images/q7/digit_6.png  used on input line 303.
 (pdftex.def)             Requested size: 82.8019pt x 59.14262pt.
-<images/q7/digit_7.png, id=132, 702.625pt x 501.875pt>
+<images/q7/digit_7.png, id=137, 702.625pt x 501.875pt>
 File: images/q7/digit_7.png Graphic file (type png)
 <use images/q7/digit_7.png>
 Package pdftex.def Info: images/q7/digit_7.png  used on input line 304.
 (pdftex.def)             Requested size: 82.8019pt x 59.14262pt.
-<images/q7/digit_8.png, id=133, 702.625pt x 501.875pt>
+<images/q7/digit_8.png, id=138, 702.625pt x 501.875pt>
 File: images/q7/digit_8.png Graphic file (type png)
 <use images/q7/digit_8.png>
 Package pdftex.def Info: images/q7/digit_8.png  used on input line 305.
 (pdftex.def)             Requested size: 82.8019pt x 59.14262pt.
-<images/q7/digit_9.png, id=134, 702.625pt x 501.875pt>
+<images/q7/digit_9.png, id=139, 702.625pt x 501.875pt>
 File: images/q7/digit_9.png Graphic file (type png)
 <use images/q7/digit_9.png>
 Package pdftex.def Info: images/q7/digit_9.png  used on input line 306.
@@ -441,7 +441,7 @@ Overfull \hbox (22.20764pt too wide) in paragraph at lines 296--308
  [][] 
  []
 
-<images/q7/gaussian.png, id=135, 578.16pt x 397.485pt>
+<images/q7/gaussian.png, id=140, 578.16pt x 397.485pt>
 File: images/q7/gaussian.png Graphic file (type png)
 <use images/q7/gaussian.png>
 Package pdftex.def Info: images/q7/gaussian.png  used on input line 316.
@@ -451,23 +451,35 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11
 
- <./images/q7/digit_0.png> <./images/q7/digit_1.png> <./images/q7/digit_2.png> <./images/q7/digit_3.png> <./images/q7/digit_4.png> <./images/q7/digit_5.png> <./images/q7/digit_6.png> <./images/q7/digit_7.png> <./images/q7/digit_8.png> <./images/q7/digit_9.png>] [12 <./images/q7/gaussian.png>] (./hw3.aux)
+ <./images/q7/digit_0.png> <./images/q7/digit_1.png> <./images/q7/digit_2.png> <./images/q7/digit_3.png> <./images/q7/digit_4.png> <./images/q7/digit_5.png> <./images/q7/digit_6.png> <./images/q7/digit_7.png> <./images/q7/digit_8.png> <./images/q7/digit_9.png>] [12 <./images/q7/gaussian.png>]
+Overfull \hbox (16.56967pt too wide) in paragraph at lines 322--322
+[]\OT1/cmr/bx/n/14.4 Cluster Tooth and Bone Datasets With Gromov-
+ []
+
+<images/q8/gromov_hausdorff_clusters.png, id=163, 578.16pt x 397.485pt>
+File: images/q8/gromov_hausdorff_clusters.png Graphic file (type png)
+<use images/q8/gromov_hausdorff_clusters.png>
+Package pdftex.def Info: images/q8/gromov_hausdorff_clusters.png  used on input line 327.
+(pdftex.def)             Requested size: 345.0pt x 237.18277pt.
+[13
+
+ <./images/q8/gromov_hausdorff_clusters.png>] (./hw3.aux)
 Package rerunfilecheck Info: File `hw3.out' has not changed.
-(rerunfilecheck)             Checksum: 947D5467A4006BBF11DC054A55B87289;2208.
+(rerunfilecheck)             Checksum: 0CFBC5914BC19B136E0E30C1B14ACEDC;2573.
  ) 
 Here is how much of TeX's memory you used:
- 10347 strings out of 475075
- 163701 string characters out of 5779003
- 512527 words of memory out of 5000000
- 31557 multiletter control sequences out of 15000+600000
- 479581 words of font info for 68 fonts, out of 8000000 for 9000
+ 10357 strings out of 475075
+ 164019 string characters out of 5779003
+ 512522 words of memory out of 5000000
+ 31563 multiletter control sequences out of 15000+600000
+ 479413 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,15n,77p,473b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw3.pdf (12 pages, 412630 bytes).
+ 72i,15n,77p,649b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on hw3.pdf (13 pages, 471506 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 
