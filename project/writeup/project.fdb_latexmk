@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex project"] 1683890918 "project.aux" "project.bbl" "project" 1683891016
+["bibtex project"] 1683892745 "project.aux" "project.bbl" "project" 1683892747
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "project.aux" 1683891016 6320 17bcad54f55ca2e8bbc499699cce85ea "pdflatex"
+  "project.aux" 1683892747 7416 2f1f292c5d0211aa8e4530bb298d2bdd "pdflatex"
   "references.bib" 1683888526 8548 6a74d4b9550044b51fc8565e113449ec ""
   (generated)
   "project.bbl"
   "project.blg"
-["pdflatex"] 1683891014 "/Users/gil2rok/school/gda/project/writeup/project.tex" "project.pdf" "project" 1683891016
-  "/Users/gil2rok/school/gda/project/writeup/project.tex" 1683891014 18572 b4c8bba25fc32b486e398fa36ee71471 ""
+["pdflatex"] 1683892745 "/Users/gil2rok/school/gda/project/writeup/project.tex" "project.pdf" "project" 1683892747
+  "/Users/gil2rok/school/gda/project/writeup/project.tex" 1683892743 20049 a663c2ab39efcfa02999eebd4450cae7 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -133,11 +133,15 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663207570 3059211 5ab6d6acc80cf4984c72eced45b8d200 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "images/Q.png" 1683884584 828899 eb04eaf66f52a0ff6ba578e3ab907b6d ""
+  "images/loss_1000.png" 1682953016 40880 9c51989c3f295132962885a2fa4a2cb8 ""
+  "images/loss_20.png" 1682660106 39571 7ef40cf80dcc163c588e5a7a272d4a8e ""
   "images/problem_statement.png" 1683863433 1119289 73e541ad3003055b5c1eb2759d28045a ""
+  "images/tc_1000.png" 1682960638 58037 276bdc8e48069cee13a8b4dfeaee7bec ""
+  "images/tc_20.png" 1682660134 49472 dc851dcc46dd2b129ebde387cd1d0100 ""
   "neurips_2023.sty" 1683852040 11306 7a0a622cd12ea31e106a743bb7d4c3c6 ""
-  "project.aux" 1683891016 6320 17bcad54f55ca2e8bbc499699cce85ea "pdflatex"
-  "project.bbl" 1683890918 5380 22362eed4934f46f8204004d8315216b "bibtex project"
-  "project.tex" 1683891014 18572 b4c8bba25fc32b486e398fa36ee71471 ""
+  "project.aux" 1683892747 7416 2f1f292c5d0211aa8e4530bb298d2bdd "pdflatex"
+  "project.bbl" 1683892745 5380 22362eed4934f46f8204004d8315216b "bibtex project"
+  "project.tex" 1683892743 20049 a663c2ab39efcfa02999eebd4450cae7 ""
   (generated)
   "project.aux"
   "project.log"
