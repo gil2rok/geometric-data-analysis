@@ -71,4 +71,5 @@ dependencies:
   - ipykernel
   - nbformat
   - certifi
+  - tqdm
 prefix: /Users/gil2rok/mambaforge/envs/gda

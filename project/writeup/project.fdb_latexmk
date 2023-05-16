@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex project"] 1683892745 "project.aux" "project.bbl" "project" 1683892747
+["bibtex project"] 1684076652 "project.aux" "project.bbl" "project" 1684076654
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "project.aux" 1683892747 7416 2f1f292c5d0211aa8e4530bb298d2bdd "pdflatex"
+  "project.aux" 1684076654 7416 9d2e74fa30c4271593ff2147b9afb27f "pdflatex"
   "references.bib" 1683888526 8548 6a74d4b9550044b51fc8565e113449ec ""
   (generated)
   "project.bbl"
   "project.blg"
-["pdflatex"] 1683892745 "/Users/gil2rok/school/gda/project/writeup/project.tex" "project.pdf" "project" 1683892747
-  "/Users/gil2rok/school/gda/project/writeup/project.tex" 1683892743 20049 a663c2ab39efcfa02999eebd4450cae7 ""
+["pdflatex"] 1684076652 "/Users/gil2rok/school/gda/project/writeup/project.tex" "project.pdf" "project" 1684076654
+  "/Users/gil2rok/school/gda/project/writeup/project.tex" 1684076650 20061 ab8622665ae3c50634c2af9ace52b5d6 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -139,9 +139,9 @@
   "images/tc_1000.png" 1682960638 58037 276bdc8e48069cee13a8b4dfeaee7bec ""
   "images/tc_20.png" 1682660134 49472 dc851dcc46dd2b129ebde387cd1d0100 ""
   "neurips_2023.sty" 1683852040 11306 7a0a622cd12ea31e106a743bb7d4c3c6 ""
-  "project.aux" 1683892747 7416 2f1f292c5d0211aa8e4530bb298d2bdd "pdflatex"
-  "project.bbl" 1683892745 5380 22362eed4934f46f8204004d8315216b "bibtex project"
-  "project.tex" 1683892743 20049 a663c2ab39efcfa02999eebd4450cae7 ""
+  "project.aux" 1684076654 7416 9d2e74fa30c4271593ff2147b9afb27f "pdflatex"
+  "project.bbl" 1684076652 5380 22362eed4934f46f8204004d8315216b "bibtex project"
+  "project.tex" 1684076650 20061 ab8622665ae3c50634c2af9ace52b5d6 ""
   (generated)
   "project.aux"
   "project.log"
